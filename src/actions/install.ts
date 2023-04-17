@@ -1,13 +1,12 @@
-const mkdirp = require('mkdirp');
+import { mkdirpSync } from 'mkdirp';
 const request = require('request');
-const { parsePackageJson } = require('../common');
-const verifyAndPlaceBinary = require('../assets/binary');
+import { parsePackageJson } from '../common';
+import { verifyAndPlaceBinary } from '../assets/binary';
 
 /**
  * Select a resource handling strategy based on given options.
  */
 function getStrategy({ url }) {
-
   if (url.endsWith('.tar.gz')) {
       return require('../assets/untar');
   } else if (url.endsWith('.zip')) {
@@ -25,12 +24,12 @@ function getStrategy({ url }) {
  *
  *  See: https://docs.npmjs.com/files/package.json#bin
  */
-function install(callback) {
+export async function install(callback): Promise<void> {
 
-  const opts = parsePackageJson();
+  const opts = await parsePackageJson();
   if (!opts) return callback('Invalid inputs');
 
-  mkdirp.sync(opts.binPath);
+  mkdirpSync(opts.binPath);
 
   console.log('Downloading from URL: ' + opts.url);
 
@@ -50,5 +49,3 @@ function install(callback) {
       });
   });
 }
-
-module.exports = install;

@@ -2,9 +2,9 @@ const { join } = require('path');
 const { unlinkSync } = require('fs');
 const { parsePackageJson, getInstallationPath } = require('../common');
 
-function uninstall(callback) {
+export async function uninstall(callback): Promise<void> {
 
-  const { binName } = parsePackageJson();
+  const { binName } = await parsePackageJson();
 
   getInstallationPath((err, installationPath) => {
       if (err) {
@@ -20,5 +20,3 @@ function uninstall(callback) {
       return callback(null);
   });
 }
-
-module.exports = uninstall;
