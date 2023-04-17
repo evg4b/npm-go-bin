@@ -1,4 +1,4 @@
-export const assertIn = <T = any>(value: T, definition: Record<string, T>, message?: string) => {
+export const assertIn = <T = any>(value: string, definition: Record<string, T>, message?: string) => {
   if (!(value in definition)) {
     throw new Error(message ?? `Value ${ JSON.stringify(value) } is not allowed.`);
   }

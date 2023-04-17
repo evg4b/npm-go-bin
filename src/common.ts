@@ -1,9 +1,10 @@
 import { join } from 'path';
-import { existsSync, readFileSync } from 'fs';
+import { access, readFile } from 'fs/promises';
+import { constants } from 'fs';
 import { mkdirpSync } from 'mkdirp';
 import { assertIn, assertIsDefined } from './helpres';
 import { ARCH_MAPPING, PLATFORM_MAPPING } from './mappings';
-import { trimStart } from 'lodash';
+import trimStart from 'lodash/trimStart';
 import findPrefix from 'find-npm-prefix';
 
 export const getInstallationPath = async (): Promise<string> => {
@@ -11,17 +12,17 @@ export const getInstallationPath = async (): Promise<string> => {
   // Environment variables set by NPM when it runs.
   // npm_config_prefix points to NPM's installation directory where `bin` folder is available
   // Ex: /Users/foo/.nvm/versions/node/v4.3.0
-  const env = process.env;
+  const { npm_config_prefix, npm_config_local_prefix } = process.env ?? {};
 
   // Get the package manager who is running the script
   // This is needed since PNPM works in a different way than NPM or YARN.
   let dir: string;
-  if (env && env.npm_config_prefix) {
-    dir = join(env.npm_config_prefix, 'bin');
-  } else if (env && env.npm_config_local_prefix) {
-    dir = join(env.npm_config_local_prefix, join('node_modules', '.bin'));
+  if (npm_config_prefix) {
+    dir = join(npm_config_prefix, 'bin');
+  } else if (npm_config_local_prefix) {
+    dir = join(npm_config_local_prefix, join('node_modules', '.bin'));
   } else {
-    const prefix: string = await findPrefix(process.cwd);
+    const prefix: string = await findPrefix(process.cwd());
     dir = join(prefix, 'node_modules', '.bin');
   }
 
@@ -32,16 +33,18 @@ export const getInstallationPath = async (): Promise<string> => {
   return dir;
 };
 
-const validateConfiguration = ({ version, goBinary }: any): void => {
-  assertIsDefined(version, 'Invalid package.json: \'version\' property must be specified');
+const validateConfiguration = (config: any): void => {
+  assertIsDefined(config.version, 'Invalid package.json: \'version\' property must be specified');
 
-  if (!goBinary || typeof (goBinary) !== 'object') {
-    throw new Error('\'goBinary\' property must be defined and be an object');
+  const binConfig = config['go-bin'];
+  assertIsDefined(config.version, 'Invalid package.json: \'go-bin\' property must be defined');
+  if (typeof (binConfig) !== 'object') {
+    throw new Error('\'go-bin\' property must be an object');
   }
 
-  assertIsDefined(goBinary.name, 'Invalid package.json: \'name\' property is required');
-  assertIsDefined(goBinary.path, 'Invalid package.json: \'path\' property is required');
-  assertIsDefined(goBinary.url, 'Invalid package.json: \'url\' property is required');
+  assertIsDefined(binConfig.name, 'Invalid package.json: \'name\' property is required');
+  assertIsDefined(binConfig.path, 'Invalid package.json: \'path\' property is required');
+  assertIsDefined(binConfig.url, 'Invalid package.json: \'url\' property is required');
 };
 
 export const getUrl = (url: Record<string, string | Record<string, string>> | string): string => {
@@ -64,29 +67,31 @@ export const getUrl = (url: Record<string, string | Record<string, string>> | st
   return internalUrl.default;
 };
 
-export function parsePackageJson(): Promise<PackageJsonInfo> {
+export async function parsePackageJson(): Promise<PackageJsonInfo> {
   assertIn(process.arch, ARCH_MAPPING, `Installation is not supported for this architecture: ${ process.arch }`);
   assertIn(process.platform, PLATFORM_MAPPING, `Installation is not supported for this platform: ${ process.platform }`);
 
-  const packageJsonPath = join('.', 'package.json');
+  const prefix = await findPrefix(process.cwd());
+  const packageJsonPath = join(prefix, 'package.json');
 
-  if (!existsSync(packageJsonPath)) {
-    console.error('Unable to find package.json. ' +
+  const isExists = await checkFileExists(packageJsonPath);
+  if (!isExists) {
+    throw new Error('Unable to find package.json. ' +
       'Please run this script at root of the package you want to be installed');
-    return;
   }
 
-  const packageJsonContent = readFileSync(packageJsonPath, { encoding: 'utf-8' });
+  const packageJsonContent = await readFile(packageJsonPath, { encoding: 'utf-8' });
   const packageJson = JSON.parse(packageJsonContent);
   validateConfiguration(packageJson);
 
+  const binConfig = packageJson['go-bin'];
   // We have validated the config. It exists in all its glory
-  const binPath = packageJson.goBinary.path;
+  const binPath = join(prefix, binConfig.path);
   const binName: string = process.platform === 'win32'
-    ? `${ packageJson.goBinary.name }.exe`
-    : packageJson.goBinary.name;
+    ? `${ binConfig.name }.exe`
+    : binConfig.name;
 
-  let sourceUrl = getUrl(packageJson.goBinary.url);
+  let sourceUrl = getUrl(binConfig.url);
   assertIsDefined(sourceUrl, 'Could not find url matching platform and architecture');
 
   // strip the 'v' if necessary v0.0.1 => 0.0.1
@@ -102,5 +107,11 @@ export function parsePackageJson(): Promise<PackageJsonInfo> {
     .replace(/{{win_ext}}/g, winExt)
     .replace(/{{archive_ext}}/g, archiveExt);
 
-  return Promise.resolve({ binName, binPath, url, version });
+  return { binName, binPath, url, version };
+}
+
+function checkFileExists(file: string): Promise<boolean> {
+  return access(file, constants.F_OK)
+    .then(() => true)
+    .catch(() => false);
 }

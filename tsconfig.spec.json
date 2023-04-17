@@ -1,0 +1,25 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "baseUrl": "./",
+    "module": "es2020",
+    "target": "ES2022",
+    "moduleResolution": "Node16",
+    "allowSyntheticDefaultImports": true,
+    "typeRoots": [
+      "node_modules/@types",
+      "./src/types.d.ts"
+    ],
+    "lib": [
+      "es2019",
+      "jest"
+    ],
+    "sourceMap": true
+  },
+  "include": [
+    "src/**/*.spec.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

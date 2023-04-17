@@ -1,5 +1,6 @@
-import { uninstall } from './actions/uninstall';
-import { install } from './actions/install';
+import { uninstall } from './uninstall';
+import { install } from './install';
+import { assertIsDefined } from './helpres';
 
 const actions = { install, uninstall, };
 
@@ -10,10 +11,8 @@ export default async (argv) => {
   }
 
   const cmd = argv[2];
+  const action = actions[cmd];
+  assertIsDefined(action, 'Invalid command to npm-go-bin. `install` and `uninstall` are the only supported commands')
 
-  if (!actions[cmd]) {
-    throw new Error('Invalid command to go-npm. `install` and `uninstall` are the only supported commands');
-  }
-
-  await actions[cmd];
+  await action();
 };

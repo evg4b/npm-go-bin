@@ -1,0 +1,5526 @@
+{
+  "inputs": {
+    "node_modules/mkdirp/dist/mjs/opts-arg.js": {
+      "bytes": 1249,
+      "imports": [
+        {
+          "path": "fs",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/mkdirp/dist/mjs/mkdirp-manual.js": {
+      "bytes": 2321,
+      "imports": [
+        {
+          "path": "path",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node_modules/mkdirp/dist/mjs/opts-arg.js",
+          "kind": "import-statement",
+          "original": "./opts-arg.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/mkdirp/dist/mjs/find-made.js": {
+      "bytes": 915,
+      "imports": [
+        {
+          "path": "path",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/mkdirp/dist/mjs/mkdirp-native.js": {
+      "bytes": 1374,
+      "imports": [
+        {
+          "path": "path",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node_modules/mkdirp/dist/mjs/find-made.js",
+          "kind": "import-statement",
+          "original": "./find-made.js"
+        },
+        {
+          "path": "node_modules/mkdirp/dist/mjs/mkdirp-manual.js",
+          "kind": "import-statement",
+          "original": "./mkdirp-manual.js"
+        },
+        {
+          "path": "node_modules/mkdirp/dist/mjs/opts-arg.js",
+          "kind": "import-statement",
+          "original": "./opts-arg.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/mkdirp/dist/mjs/path-arg.js": {
+      "bytes": 813,
+      "imports": [
+        {
+          "path": "path",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/mkdirp/dist/mjs/use-native.js": {
+      "bytes": 592,
+      "imports": [
+        {
+          "path": "fs",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node_modules/mkdirp/dist/mjs/opts-arg.js",
+          "kind": "import-statement",
+          "original": "./opts-arg.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/mkdirp/dist/mjs/index.js": {
+      "bytes": 1298,
+      "imports": [
+        {
+          "path": "node_modules/mkdirp/dist/mjs/mkdirp-manual.js",
+          "kind": "import-statement",
+          "original": "./mkdirp-manual.js"
+        },
+        {
+          "path": "node_modules/mkdirp/dist/mjs/mkdirp-native.js",
+          "kind": "import-statement",
+          "original": "./mkdirp-native.js"
+        },
+        {
+          "path": "node_modules/mkdirp/dist/mjs/opts-arg.js",
+          "kind": "import-statement",
+          "original": "./opts-arg.js"
+        },
+        {
+          "path": "node_modules/mkdirp/dist/mjs/path-arg.js",
+          "kind": "import-statement",
+          "original": "./path-arg.js"
+        },
+        {
+          "path": "node_modules/mkdirp/dist/mjs/use-native.js",
+          "kind": "import-statement",
+          "original": "./use-native.js"
+        },
+        {
+          "path": "node_modules/mkdirp/dist/mjs/mkdirp-manual.js",
+          "kind": "import-statement",
+          "original": "./mkdirp-manual.js"
+        },
+        {
+          "path": "node_modules/mkdirp/dist/mjs/mkdirp-native.js",
+          "kind": "import-statement",
+          "original": "./mkdirp-native.js"
+        },
+        {
+          "path": "node_modules/mkdirp/dist/mjs/use-native.js",
+          "kind": "import-statement",
+          "original": "./use-native.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/helpres.ts": {
+      "bytes": 423,
+      "imports": [],
+      "format": "esm"
+    },
+    "src/mappings.ts": {
+      "bytes": 331,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/lodash/_freeGlobal.js": {
+      "bytes": 173,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/lodash/_root.js": {
+      "bytes": 300,
+      "imports": [
+        {
+          "path": "node_modules/lodash/_freeGlobal.js",
+          "kind": "require-call",
+          "original": "./_freeGlobal"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/lodash/_Symbol.js": {
+      "bytes": 118,
+      "imports": [
+        {
+          "path": "node_modules/lodash/_root.js",
+          "kind": "require-call",
+          "original": "./_root"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/lodash/_arrayMap.js": {
+      "bytes": 556,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/lodash/isArray.js": {
+      "bytes": 488,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/lodash/_getRawTag.js": {
+      "bytes": 1139,
+      "imports": [
+        {
+          "path": "node_modules/lodash/_Symbol.js",
+          "kind": "require-call",
+          "original": "./_Symbol"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/lodash/_objectToString.js": {
+      "bytes": 565,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/lodash/_baseGetTag.js": {
+      "bytes": 792,
+      "imports": [
+        {
+          "path": "node_modules/lodash/_Symbol.js",
+          "kind": "require-call",
+          "original": "./_Symbol"
+        },
+        {
+          "path": "node_modules/lodash/_getRawTag.js",
+          "kind": "require-call",
+          "original": "./_getRawTag"
+        },
+        {
+          "path": "node_modules/lodash/_objectToString.js",
+          "kind": "require-call",
+          "original": "./_objectToString"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/lodash/isObjectLike.js": {
+      "bytes": 614,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/lodash/isSymbol.js": {
+      "bytes": 682,
+      "imports": [
+        {
+          "path": "node_modules/lodash/_baseGetTag.js",
+          "kind": "require-call",
+          "original": "./_baseGetTag"
+        },
+        {
+          "path": "node_modules/lodash/isObjectLike.js",
+          "kind": "require-call",
+          "original": "./isObjectLike"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/lodash/_baseToString.js": {
+      "bytes": 1154,
+      "imports": [
+        {
+          "path": "node_modules/lodash/_Symbol.js",
+          "kind": "require-call",
+          "original": "./_Symbol"
+        },
+        {
+          "path": "node_modules/lodash/_arrayMap.js",
+          "kind": "require-call",
+          "original": "./_arrayMap"
+        },
+        {
+          "path": "node_modules/lodash/isArray.js",
+          "kind": "require-call",
+          "original": "./isArray"
+        },
+        {
+          "path": "node_modules/lodash/isSymbol.js",
+          "kind": "require-call",
+          "original": "./isSymbol"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/lodash/_baseSlice.js": {
+      "bytes": 756,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/lodash/_castSlice.js": {
+      "bytes": 517,
+      "imports": [
+        {
+          "path": "node_modules/lodash/_baseSlice.js",
+          "kind": "require-call",
+          "original": "./_baseSlice"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/lodash/_baseFindIndex.js": {
+      "bytes": 766,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/lodash/_baseIsNaN.js": {
+      "bytes": 296,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/lodash/_strictIndexOf.js": {
+      "bytes": 600,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/lodash/_baseIndexOf.js": {
+      "bytes": 659,
+      "imports": [
+        {
+          "path": "node_modules/lodash/_baseFindIndex.js",
+          "kind": "require-call",
+          "original": "./_baseFindIndex"
+        },
+        {
+          "path": "node_modules/lodash/_baseIsNaN.js",
+          "kind": "require-call",
+          "original": "./_baseIsNaN"
+        },
+        {
+          "path": "node_modules/lodash/_strictIndexOf.js",
+          "kind": "require-call",
+          "original": "./_strictIndexOf"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/lodash/_charsStartIndex.js": {
+      "bytes": 636,
+      "imports": [
+        {
+          "path": "node_modules/lodash/_baseIndexOf.js",
+          "kind": "require-call",
+          "original": "./_baseIndexOf"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/lodash/_asciiToArray.js": {
+      "bytes": 257,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/lodash/_hasUnicode.js": {
+      "bytes": 949,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/lodash/_unicodeToArray.js": {
+      "bytes": 1588,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/lodash/_stringToArray.js": {
+      "bytes": 450,
+      "imports": [
+        {
+          "path": "node_modules/lodash/_asciiToArray.js",
+          "kind": "require-call",
+          "original": "./_asciiToArray"
+        },
+        {
+          "path": "node_modules/lodash/_hasUnicode.js",
+          "kind": "require-call",
+          "original": "./_hasUnicode"
+        },
+        {
+          "path": "node_modules/lodash/_unicodeToArray.js",
+          "kind": "require-call",
+          "original": "./_unicodeToArray"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/lodash/toString.js": {
+      "bytes": 580,
+      "imports": [
+        {
+          "path": "node_modules/lodash/_baseToString.js",
+          "kind": "require-call",
+          "original": "./_baseToString"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/lodash/trimStart.js": {
+      "bytes": 1228,
+      "imports": [
+        {
+          "path": "node_modules/lodash/_baseToString.js",
+          "kind": "require-call",
+          "original": "./_baseToString"
+        },
+        {
+          "path": "node_modules/lodash/_castSlice.js",
+          "kind": "require-call",
+          "original": "./_castSlice"
+        },
+        {
+          "path": "node_modules/lodash/_charsStartIndex.js",
+          "kind": "require-call",
+          "original": "./_charsStartIndex"
+        },
+        {
+          "path": "node_modules/lodash/_stringToArray.js",
+          "kind": "require-call",
+          "original": "./_stringToArray"
+        },
+        {
+          "path": "node_modules/lodash/toString.js",
+          "kind": "require-call",
+          "original": "./toString"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/find-npm-prefix/find-prefix.js": {
+      "bytes": 1485,
+      "imports": [
+        {
+          "path": "fs",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        }
+      ],
+      "format": "cjs"
+    },
+    "src/common.ts": {
+      "bytes": 4460,
+      "imports": [
+        {
+          "path": "path",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "fs/promises",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "fs",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node_modules/mkdirp/dist/mjs/index.js",
+          "kind": "import-statement",
+          "original": "mkdirp"
+        },
+        {
+          "path": "src/helpres.ts",
+          "kind": "import-statement",
+          "original": "./helpres"
+        },
+        {
+          "path": "src/mappings.ts",
+          "kind": "import-statement",
+          "original": "./mappings"
+        },
+        {
+          "path": "node_modules/lodash/trimStart.js",
+          "kind": "import-statement",
+          "original": "lodash/trimStart"
+        },
+        {
+          "path": "node_modules/find-npm-prefix/find-prefix.js",
+          "kind": "import-statement",
+          "original": "find-npm-prefix"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/uninstall.ts": {
+      "bytes": 420,
+      "imports": [
+        {
+          "path": "path",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "fs",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "src/common.ts",
+          "kind": "require-call",
+          "original": "./common"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/data-uri-to-buffer/dist/index.js": {
+      "bytes": 1852,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/web-streams-polyfill/dist/ponyfill.es2018.js": {
+      "bytes": 189685,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/fetch-blob/streams.cjs": {
+      "bytes": 1604,
+      "imports": [
+        {
+          "path": "node:process",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:stream/web",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node_modules/web-streams-polyfill/dist/ponyfill.es2018.js",
+          "kind": "require-call",
+          "original": "web-streams-polyfill/dist/ponyfill.es2018.js"
+        },
+        {
+          "path": "buffer",
+          "kind": "require-call",
+          "external": true
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/fetch-blob/index.js": {
+      "bytes": 7432,
+      "imports": [
+        {
+          "path": "node_modules/fetch-blob/streams.cjs",
+          "kind": "import-statement",
+          "original": "./streams.cjs"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/fetch-blob/file.js": {
+      "bytes": 1228,
+      "imports": [
+        {
+          "path": "node_modules/fetch-blob/index.js",
+          "kind": "import-statement",
+          "original": "./index.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/formdata-polyfill/esm.min.js": {
+      "bytes": 2378,
+      "imports": [
+        {
+          "path": "node_modules/fetch-blob/index.js",
+          "kind": "import-statement",
+          "original": "fetch-blob"
+        },
+        {
+          "path": "node_modules/fetch-blob/file.js",
+          "kind": "import-statement",
+          "original": "fetch-blob/file.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/node-fetch/src/errors/base.js": {
+      "bytes": 346,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/node-fetch/src/errors/fetch-error.js": {
+      "bytes": 871,
+      "imports": [
+        {
+          "path": "node_modules/node-fetch/src/errors/base.js",
+          "kind": "import-statement",
+          "original": "./base.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/node-fetch/src/utils/is.js": {
+      "bytes": 2246,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/node-domexception/index.js": {
+      "bytes": 461,
+      "imports": [
+        {
+          "path": "worker_threads",
+          "kind": "require-call",
+          "external": true
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/fetch-blob/from.js": {
+      "bytes": 2648,
+      "imports": [
+        {
+          "path": "node:fs",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node:path",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node_modules/node-domexception/index.js",
+          "kind": "import-statement",
+          "original": "node-domexception"
+        },
+        {
+          "path": "node_modules/fetch-blob/file.js",
+          "kind": "import-statement",
+          "original": "./file.js"
+        },
+        {
+          "path": "node_modules/fetch-blob/index.js",
+          "kind": "import-statement",
+          "original": "./index.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/node-fetch/src/utils/multipart-parser.js": {
+      "bytes": 9643,
+      "imports": [
+        {
+          "path": "node_modules/fetch-blob/from.js",
+          "kind": "import-statement",
+          "original": "fetch-blob/from.js"
+        },
+        {
+          "path": "node_modules/formdata-polyfill/esm.min.js",
+          "kind": "import-statement",
+          "original": "formdata-polyfill/esm.min.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/node-fetch/src/body.js": {
+      "bytes": 9850,
+      "imports": [
+        {
+          "path": "node:stream",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node:util",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node:buffer",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node_modules/fetch-blob/index.js",
+          "kind": "import-statement",
+          "original": "fetch-blob"
+        },
+        {
+          "path": "node_modules/formdata-polyfill/esm.min.js",
+          "kind": "import-statement",
+          "original": "formdata-polyfill/esm.min.js"
+        },
+        {
+          "path": "node_modules/node-fetch/src/errors/fetch-error.js",
+          "kind": "import-statement",
+          "original": "./errors/fetch-error.js"
+        },
+        {
+          "path": "node_modules/node-fetch/src/errors/base.js",
+          "kind": "import-statement",
+          "original": "./errors/base.js"
+        },
+        {
+          "path": "node_modules/node-fetch/src/utils/is.js",
+          "kind": "import-statement",
+          "original": "./utils/is.js"
+        },
+        {
+          "path": "node_modules/node-fetch/src/utils/multipart-parser.js",
+          "kind": "dynamic-import",
+          "original": "./utils/multipart-parser.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/node-fetch/src/headers.js": {
+      "bytes": 6932,
+      "imports": [
+        {
+          "path": "node:util",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node:http",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/node-fetch/src/utils/is-redirect.js": {
+      "bytes": 229,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/node-fetch/src/response.js": {
+      "bytes": 3433,
+      "imports": [
+        {
+          "path": "node_modules/node-fetch/src/headers.js",
+          "kind": "import-statement",
+          "original": "./headers.js"
+        },
+        {
+          "path": "node_modules/node-fetch/src/body.js",
+          "kind": "import-statement",
+          "original": "./body.js"
+        },
+        {
+          "path": "node_modules/node-fetch/src/utils/is-redirect.js",
+          "kind": "import-statement",
+          "original": "./utils/is-redirect.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/node-fetch/src/utils/get-search.js": {
+      "bytes": 296,
+      "imports": [],
+      "format": "esm"
+    },
+    "node_modules/node-fetch/src/utils/referrer.js": {
+      "bytes": 11845,
+      "imports": [
+        {
+          "path": "node:net",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/node-fetch/src/request.js": {
+      "bytes": 8706,
+      "imports": [
+        {
+          "path": "node:url",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node:util",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node_modules/node-fetch/src/headers.js",
+          "kind": "import-statement",
+          "original": "./headers.js"
+        },
+        {
+          "path": "node_modules/node-fetch/src/body.js",
+          "kind": "import-statement",
+          "original": "./body.js"
+        },
+        {
+          "path": "node_modules/node-fetch/src/utils/is.js",
+          "kind": "import-statement",
+          "original": "./utils/is.js"
+        },
+        {
+          "path": "node_modules/node-fetch/src/utils/get-search.js",
+          "kind": "import-statement",
+          "original": "./utils/get-search.js"
+        },
+        {
+          "path": "node_modules/node-fetch/src/utils/referrer.js",
+          "kind": "import-statement",
+          "original": "./utils/referrer.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/node-fetch/src/errors/abort-error.js": {
+      "bytes": 218,
+      "imports": [
+        {
+          "path": "node_modules/node-fetch/src/errors/base.js",
+          "kind": "import-statement",
+          "original": "./base.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/node-fetch/src/index.js": {
+      "bytes": 12908,
+      "imports": [
+        {
+          "path": "node:http",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node:https",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node:zlib",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node:stream",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node:buffer",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node_modules/data-uri-to-buffer/dist/index.js",
+          "kind": "import-statement",
+          "original": "data-uri-to-buffer"
+        },
+        {
+          "path": "node_modules/node-fetch/src/body.js",
+          "kind": "import-statement",
+          "original": "./body.js"
+        },
+        {
+          "path": "node_modules/node-fetch/src/response.js",
+          "kind": "import-statement",
+          "original": "./response.js"
+        },
+        {
+          "path": "node_modules/node-fetch/src/headers.js",
+          "kind": "import-statement",
+          "original": "./headers.js"
+        },
+        {
+          "path": "node_modules/node-fetch/src/request.js",
+          "kind": "import-statement",
+          "original": "./request.js"
+        },
+        {
+          "path": "node_modules/node-fetch/src/errors/fetch-error.js",
+          "kind": "import-statement",
+          "original": "./errors/fetch-error.js"
+        },
+        {
+          "path": "node_modules/node-fetch/src/errors/abort-error.js",
+          "kind": "import-statement",
+          "original": "./errors/abort-error.js"
+        },
+        {
+          "path": "node_modules/node-fetch/src/utils/is-redirect.js",
+          "kind": "import-statement",
+          "original": "./utils/is-redirect.js"
+        },
+        {
+          "path": "node_modules/formdata-polyfill/esm.min.js",
+          "kind": "import-statement",
+          "original": "formdata-polyfill/esm.min.js"
+        },
+        {
+          "path": "node_modules/node-fetch/src/utils/is.js",
+          "kind": "import-statement",
+          "original": "./utils/is.js"
+        },
+        {
+          "path": "node_modules/node-fetch/src/utils/referrer.js",
+          "kind": "import-statement",
+          "original": "./utils/referrer.js"
+        },
+        {
+          "path": "node_modules/fetch-blob/from.js",
+          "kind": "import-statement",
+          "original": "fetch-blob/from.js"
+        }
+      ],
+      "format": "esm"
+    },
+    "node_modules/tar/lib/high-level-opt.js": {
+      "bytes": 760,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/tar/node_modules/minipass/index.js": {
+      "bytes": 18549,
+      "imports": [
+        {
+          "path": "events",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "stream",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "string_decoder",
+          "kind": "require-call",
+          "external": true
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/minizlib/constants.js": {
+      "bytes": 3740,
+      "imports": [
+        {
+          "path": "zlib",
+          "kind": "require-call",
+          "external": true
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/minipass/index.js": {
+      "bytes": 16631,
+      "imports": [
+        {
+          "path": "events",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "stream",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "string_decoder",
+          "kind": "require-call",
+          "external": true
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/minizlib/index.js": {
+      "bytes": 9444,
+      "imports": [
+        {
+          "path": "assert",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "buffer",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "zlib",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node_modules/minizlib/constants.js",
+          "kind": "require-call",
+          "original": "./constants.js"
+        },
+        {
+          "path": "node_modules/minipass/index.js",
+          "kind": "require-call",
+          "original": "minipass"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/tar/lib/normalize-windows-path.js": {
+      "bytes": 410,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/tar/lib/read-entry.js": {
+      "bytes": 2838,
+      "imports": [
+        {
+          "path": "node_modules/tar/node_modules/minipass/index.js",
+          "kind": "require-call",
+          "original": "minipass"
+        },
+        {
+          "path": "node_modules/tar/lib/normalize-windows-path.js",
+          "kind": "require-call",
+          "original": "./normalize-windows-path.js"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/tar/lib/types.js": {
+      "bytes": 1096,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/tar/lib/large-numbers.js": {
+      "bytes": 2229,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/tar/lib/header.js": {
+      "bytes": 9154,
+      "imports": [
+        {
+          "path": "node_modules/tar/lib/types.js",
+          "kind": "require-call",
+          "original": "./types.js"
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node_modules/tar/lib/large-numbers.js",
+          "kind": "require-call",
+          "original": "./large-numbers.js"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/tar/lib/pax.js": {
+      "bytes": 4068,
+      "imports": [
+        {
+          "path": "node_modules/tar/lib/header.js",
+          "kind": "require-call",
+          "original": "./header.js"
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/tar/lib/strip-trailing-slashes.js": {
+      "bytes": 394,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/tar/lib/warn-mixin.js": {
+      "bytes": 725,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/tar/lib/winchars.js": {
+      "bytes": 535,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/tar/lib/strip-absolute-path.js": {
+      "bytes": 917,
+      "imports": [
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/tar/lib/mode-fix.js": {
+      "bytes": 649,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/tar/lib/write-entry.js": {
+      "bytes": 15296,
+      "imports": [
+        {
+          "path": "node_modules/tar/node_modules/minipass/index.js",
+          "kind": "require-call",
+          "original": "minipass"
+        },
+        {
+          "path": "node_modules/tar/lib/pax.js",
+          "kind": "require-call",
+          "original": "./pax.js"
+        },
+        {
+          "path": "node_modules/tar/lib/header.js",
+          "kind": "require-call",
+          "original": "./header.js"
+        },
+        {
+          "path": "fs",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node_modules/tar/lib/normalize-windows-path.js",
+          "kind": "require-call",
+          "original": "./normalize-windows-path.js"
+        },
+        {
+          "path": "node_modules/tar/lib/strip-trailing-slashes.js",
+          "kind": "require-call",
+          "original": "./strip-trailing-slashes.js"
+        },
+        {
+          "path": "node_modules/tar/lib/warn-mixin.js",
+          "kind": "require-call",
+          "original": "./warn-mixin.js"
+        },
+        {
+          "path": "node_modules/tar/lib/winchars.js",
+          "kind": "require-call",
+          "original": "./winchars.js"
+        },
+        {
+          "path": "node_modules/tar/lib/strip-absolute-path.js",
+          "kind": "require-call",
+          "original": "./strip-absolute-path.js"
+        },
+        {
+          "path": "node_modules/tar/lib/mode-fix.js",
+          "kind": "require-call",
+          "original": "./mode-fix.js"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/yallist/iterator.js": {
+      "bytes": 207,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/yallist/yallist.js": {
+      "bytes": 8411,
+      "imports": [
+        {
+          "path": "node_modules/yallist/iterator.js",
+          "kind": "require-call",
+          "original": "./iterator.js"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/tar/lib/pack.js": {
+      "bytes": 9675,
+      "imports": [
+        {
+          "path": "node_modules/tar/node_modules/minipass/index.js",
+          "kind": "require-call",
+          "original": "minipass"
+        },
+        {
+          "path": "node_modules/minizlib/index.js",
+          "kind": "require-call",
+          "original": "minizlib"
+        },
+        {
+          "path": "node_modules/tar/lib/read-entry.js",
+          "kind": "require-call",
+          "original": "./read-entry.js"
+        },
+        {
+          "path": "node_modules/tar/lib/write-entry.js",
+          "kind": "require-call",
+          "original": "./write-entry.js"
+        },
+        {
+          "path": "node_modules/yallist/yallist.js",
+          "kind": "require-call",
+          "original": "yallist"
+        },
+        {
+          "path": "fs",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node_modules/tar/lib/warn-mixin.js",
+          "kind": "require-call",
+          "original": "./warn-mixin.js"
+        },
+        {
+          "path": "node_modules/tar/lib/normalize-windows-path.js",
+          "kind": "require-call",
+          "original": "./normalize-windows-path.js"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/fs-minipass/index.js": {
+      "bytes": 9990,
+      "imports": [
+        {
+          "path": "node_modules/minipass/index.js",
+          "kind": "require-call",
+          "original": "minipass"
+        },
+        {
+          "path": "events",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "fs",
+          "kind": "require-call",
+          "external": true
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/tar/lib/parse.js": {
+      "bytes": 14631,
+      "imports": [
+        {
+          "path": "node_modules/tar/lib/warn-mixin.js",
+          "kind": "require-call",
+          "original": "./warn-mixin.js"
+        },
+        {
+          "path": "node_modules/tar/lib/header.js",
+          "kind": "require-call",
+          "original": "./header.js"
+        },
+        {
+          "path": "events",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node_modules/yallist/yallist.js",
+          "kind": "require-call",
+          "original": "yallist"
+        },
+        {
+          "path": "node_modules/tar/lib/read-entry.js",
+          "kind": "require-call",
+          "original": "./read-entry.js"
+        },
+        {
+          "path": "node_modules/tar/lib/pax.js",
+          "kind": "require-call",
+          "original": "./pax.js"
+        },
+        {
+          "path": "node_modules/minizlib/index.js",
+          "kind": "require-call",
+          "original": "minizlib"
+        },
+        {
+          "path": "process",
+          "kind": "require-call",
+          "external": true
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/tar/lib/list.js": {
+      "bytes": 3224,
+      "imports": [
+        {
+          "path": "node_modules/tar/lib/high-level-opt.js",
+          "kind": "require-call",
+          "original": "./high-level-opt.js"
+        },
+        {
+          "path": "node_modules/tar/lib/parse.js",
+          "kind": "require-call",
+          "original": "./parse.js"
+        },
+        {
+          "path": "fs",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node_modules/fs-minipass/index.js",
+          "kind": "require-call",
+          "original": "fs-minipass"
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node_modules/tar/lib/strip-trailing-slashes.js",
+          "kind": "require-call",
+          "original": "./strip-trailing-slashes.js"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/tar/lib/create.js": {
+      "bytes": 2395,
+      "imports": [
+        {
+          "path": "node_modules/tar/lib/high-level-opt.js",
+          "kind": "require-call",
+          "original": "./high-level-opt.js"
+        },
+        {
+          "path": "node_modules/tar/lib/pack.js",
+          "kind": "require-call",
+          "original": "./pack.js"
+        },
+        {
+          "path": "node_modules/fs-minipass/index.js",
+          "kind": "require-call",
+          "original": "fs-minipass"
+        },
+        {
+          "path": "node_modules/tar/lib/list.js",
+          "kind": "require-call",
+          "original": "./list.js"
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/tar/lib/replace.js": {
+      "bytes": 5705,
+      "imports": [
+        {
+          "path": "node_modules/tar/lib/high-level-opt.js",
+          "kind": "require-call",
+          "original": "./high-level-opt.js"
+        },
+        {
+          "path": "node_modules/tar/lib/pack.js",
+          "kind": "require-call",
+          "original": "./pack.js"
+        },
+        {
+          "path": "fs",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node_modules/fs-minipass/index.js",
+          "kind": "require-call",
+          "original": "fs-minipass"
+        },
+        {
+          "path": "node_modules/tar/lib/list.js",
+          "kind": "require-call",
+          "original": "./list.js"
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node_modules/tar/lib/header.js",
+          "kind": "require-call",
+          "original": "./header.js"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/tar/lib/update.js": {
+      "bytes": 866,
+      "imports": [
+        {
+          "path": "node_modules/tar/lib/high-level-opt.js",
+          "kind": "require-call",
+          "original": "./high-level-opt.js"
+        },
+        {
+          "path": "node_modules/tar/lib/replace.js",
+          "kind": "require-call",
+          "original": "./replace.js"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/tar/node_modules/mkdirp/lib/opts-arg.js": {
+      "bytes": 784,
+      "imports": [
+        {
+          "path": "util",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "fs",
+          "kind": "require-call",
+          "external": true
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/tar/node_modules/mkdirp/lib/path-arg.js": {
+      "bytes": 730,
+      "imports": [
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/tar/node_modules/mkdirp/lib/find-made.js": {
+      "bytes": 763,
+      "imports": [
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/tar/node_modules/mkdirp/lib/mkdirp-manual.js": {
+      "bytes": 1610,
+      "imports": [
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/tar/node_modules/mkdirp/lib/mkdirp-native.js": {
+      "bytes": 969,
+      "imports": [
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node_modules/tar/node_modules/mkdirp/lib/find-made.js",
+          "kind": "require-call",
+          "original": "./find-made.js"
+        },
+        {
+          "path": "node_modules/tar/node_modules/mkdirp/lib/mkdirp-manual.js",
+          "kind": "require-call",
+          "original": "./mkdirp-manual.js"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/tar/node_modules/mkdirp/lib/use-native.js": {
+      "bytes": 448,
+      "imports": [
+        {
+          "path": "fs",
+          "kind": "require-call",
+          "external": true
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/tar/node_modules/mkdirp/index.js": {
+      "bytes": 1029,
+      "imports": [
+        {
+          "path": "node_modules/tar/node_modules/mkdirp/lib/opts-arg.js",
+          "kind": "require-call",
+          "original": "./lib/opts-arg.js"
+        },
+        {
+          "path": "node_modules/tar/node_modules/mkdirp/lib/path-arg.js",
+          "kind": "require-call",
+          "original": "./lib/path-arg.js"
+        },
+        {
+          "path": "node_modules/tar/node_modules/mkdirp/lib/mkdirp-native.js",
+          "kind": "require-call",
+          "original": "./lib/mkdirp-native.js"
+        },
+        {
+          "path": "node_modules/tar/node_modules/mkdirp/lib/mkdirp-manual.js",
+          "kind": "require-call",
+          "original": "./lib/mkdirp-manual.js"
+        },
+        {
+          "path": "node_modules/tar/node_modules/mkdirp/lib/use-native.js",
+          "kind": "require-call",
+          "original": "./lib/use-native.js"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/chownr/chownr.js": {
+      "bytes": 4275,
+      "imports": [
+        {
+          "path": "fs",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/tar/lib/mkdir.js": {
+      "bytes": 5485,
+      "imports": [
+        {
+          "path": "node_modules/tar/node_modules/mkdirp/index.js",
+          "kind": "require-call",
+          "original": "mkdirp"
+        },
+        {
+          "path": "fs",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node_modules/chownr/chownr.js",
+          "kind": "require-call",
+          "original": "chownr"
+        },
+        {
+          "path": "node_modules/tar/lib/normalize-windows-path.js",
+          "kind": "require-call",
+          "original": "./normalize-windows-path.js"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/tar/lib/normalize-unicode.js": {
+      "bytes": 413,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/tar/lib/path-reservations.js": {
+      "bytes": 4410,
+      "imports": [
+        {
+          "path": "assert",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node_modules/tar/lib/normalize-unicode.js",
+          "kind": "require-call",
+          "original": "./normalize-unicode.js"
+        },
+        {
+          "path": "node_modules/tar/lib/strip-trailing-slashes.js",
+          "kind": "require-call",
+          "original": "./strip-trailing-slashes.js"
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/tar/lib/get-write-flag.js": {
+      "bytes": 921,
+      "imports": [
+        {
+          "path": "fs",
+          "kind": "require-call",
+          "external": true
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/tar/lib/unpack.js": {
+      "bytes": 25379,
+      "imports": [
+        {
+          "path": "assert",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node_modules/tar/lib/parse.js",
+          "kind": "require-call",
+          "original": "./parse.js"
+        },
+        {
+          "path": "fs",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node_modules/fs-minipass/index.js",
+          "kind": "require-call",
+          "original": "fs-minipass"
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node_modules/tar/lib/mkdir.js",
+          "kind": "require-call",
+          "original": "./mkdir.js"
+        },
+        {
+          "path": "node_modules/tar/lib/winchars.js",
+          "kind": "require-call",
+          "original": "./winchars.js"
+        },
+        {
+          "path": "node_modules/tar/lib/path-reservations.js",
+          "kind": "require-call",
+          "original": "./path-reservations.js"
+        },
+        {
+          "path": "node_modules/tar/lib/strip-absolute-path.js",
+          "kind": "require-call",
+          "original": "./strip-absolute-path.js"
+        },
+        {
+          "path": "node_modules/tar/lib/normalize-windows-path.js",
+          "kind": "require-call",
+          "original": "./normalize-windows-path.js"
+        },
+        {
+          "path": "node_modules/tar/lib/strip-trailing-slashes.js",
+          "kind": "require-call",
+          "original": "./strip-trailing-slashes.js"
+        },
+        {
+          "path": "node_modules/tar/lib/normalize-unicode.js",
+          "kind": "require-call",
+          "original": "./normalize-unicode.js"
+        },
+        {
+          "path": "crypto",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node_modules/tar/lib/get-write-flag.js",
+          "kind": "require-call",
+          "original": "./get-write-flag.js"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/tar/lib/extract.js": {
+      "bytes": 2852,
+      "imports": [
+        {
+          "path": "node_modules/tar/lib/high-level-opt.js",
+          "kind": "require-call",
+          "original": "./high-level-opt.js"
+        },
+        {
+          "path": "node_modules/tar/lib/unpack.js",
+          "kind": "require-call",
+          "original": "./unpack.js"
+        },
+        {
+          "path": "fs",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node_modules/fs-minipass/index.js",
+          "kind": "require-call",
+          "original": "fs-minipass"
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node_modules/tar/lib/strip-trailing-slashes.js",
+          "kind": "require-call",
+          "original": "./strip-trailing-slashes.js"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/tar/index.js": {
+      "bytes": 683,
+      "imports": [
+        {
+          "path": "node_modules/tar/lib/create.js",
+          "kind": "require-call",
+          "original": "./lib/create.js"
+        },
+        {
+          "path": "node_modules/tar/lib/replace.js",
+          "kind": "require-call",
+          "original": "./lib/replace.js"
+        },
+        {
+          "path": "node_modules/tar/lib/list.js",
+          "kind": "require-call",
+          "original": "./lib/list.js"
+        },
+        {
+          "path": "node_modules/tar/lib/update.js",
+          "kind": "require-call",
+          "original": "./lib/update.js"
+        },
+        {
+          "path": "node_modules/tar/lib/extract.js",
+          "kind": "require-call",
+          "original": "./lib/extract.js"
+        },
+        {
+          "path": "node_modules/tar/lib/pack.js",
+          "kind": "require-call",
+          "original": "./lib/pack.js"
+        },
+        {
+          "path": "node_modules/tar/lib/unpack.js",
+          "kind": "require-call",
+          "original": "./lib/unpack.js"
+        },
+        {
+          "path": "node_modules/tar/lib/parse.js",
+          "kind": "require-call",
+          "original": "./lib/parse.js"
+        },
+        {
+          "path": "node_modules/tar/lib/read-entry.js",
+          "kind": "require-call",
+          "original": "./lib/read-entry.js"
+        },
+        {
+          "path": "node_modules/tar/lib/write-entry.js",
+          "kind": "require-call",
+          "original": "./lib/write-entry.js"
+        },
+        {
+          "path": "node_modules/tar/lib/header.js",
+          "kind": "require-call",
+          "original": "./lib/header.js"
+        },
+        {
+          "path": "node_modules/tar/lib/pax.js",
+          "kind": "require-call",
+          "original": "./lib/pax.js"
+        },
+        {
+          "path": "node_modules/tar/lib/types.js",
+          "kind": "require-call",
+          "original": "./lib/types.js"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/listenercount/index.js": {
+      "bytes": 427,
+      "imports": [
+        {
+          "path": "events",
+          "kind": "require-call",
+          "external": true
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/buffer-indexof-polyfill/init-buffer.js": {
+      "bytes": 280,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/buffer-indexof-polyfill/index.js": {
+      "bytes": 2065,
+      "imports": [
+        {
+          "path": "node_modules/buffer-indexof-polyfill/init-buffer.js",
+          "kind": "require-call",
+          "original": "./init-buffer"
+        }
+      ]
+    },
+    "node_modules/setimmediate/setImmediate.js": {
+      "bytes": 6475,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/traverse/index.js": {
+      "bytes": 9094,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/chainsaw/index.js": {
+      "bytes": 3705,
+      "imports": [
+        {
+          "path": "node_modules/traverse/index.js",
+          "kind": "require-call",
+          "original": "traverse"
+        },
+        {
+          "path": "events",
+          "kind": "require-call",
+          "external": true
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/buffers/index.js": {
+      "bytes": 7057,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/binary/lib/vars.js": {
+      "bytes": 710,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/binary/index.js": {
+      "bytes": 10553,
+      "imports": [
+        {
+          "path": "node_modules/chainsaw/index.js",
+          "kind": "require-call",
+          "original": "chainsaw"
+        },
+        {
+          "path": "events",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node_modules/buffers/index.js",
+          "kind": "require-call",
+          "original": "buffers"
+        },
+        {
+          "path": "node_modules/binary/lib/vars.js",
+          "kind": "require-call",
+          "original": "./lib/vars.js"
+        },
+        {
+          "path": "stream",
+          "kind": "require-call",
+          "external": true
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/bluebird/js/release/es5.js": {
+      "bytes": 1978,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/bluebird/js/release/util.js": {
+      "bytes": 10250,
+      "imports": [
+        {
+          "path": "node_modules/bluebird/js/release/es5.js",
+          "kind": "require-call",
+          "original": "./es5"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/bluebird/js/release/schedule.js": {
+      "bytes": 2109,
+      "imports": [
+        {
+          "path": "node_modules/bluebird/js/release/util.js",
+          "kind": "require-call",
+          "original": "./util"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/bluebird/js/release/queue.js": {
+      "bytes": 1873,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/bluebird/js/release/async.js": {
+      "bytes": 4132,
+      "imports": [
+        {
+          "path": "node_modules/bluebird/js/release/schedule.js",
+          "kind": "require-call",
+          "original": "./schedule"
+        },
+        {
+          "path": "node_modules/bluebird/js/release/queue.js",
+          "kind": "require-call",
+          "original": "./queue"
+        },
+        {
+          "path": "node_modules/bluebird/js/release/util.js",
+          "kind": "require-call",
+          "original": "./util"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/bluebird/js/release/errors.js": {
+      "bytes": 3717,
+      "imports": [
+        {
+          "path": "node_modules/bluebird/js/release/es5.js",
+          "kind": "require-call",
+          "original": "./es5"
+        },
+        {
+          "path": "node_modules/bluebird/js/release/util.js",
+          "kind": "require-call",
+          "original": "./util"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/bluebird/js/release/thenables.js": {
+      "bytes": 2131,
+      "imports": [
+        {
+          "path": "node_modules/bluebird/js/release/util.js",
+          "kind": "require-call",
+          "original": "./util"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/bluebird/js/release/promise_array.js": {
+      "bytes": 5175,
+      "imports": [
+        {
+          "path": "node_modules/bluebird/js/release/util.js",
+          "kind": "require-call",
+          "original": "./util"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/bluebird/js/release/context.js": {
+      "bytes": 2382,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/bluebird/js/release/debuggability.js": {
+      "bytes": 29519,
+      "imports": [
+        {
+          "path": "node_modules/bluebird/js/release/errors.js",
+          "kind": "require-call",
+          "original": "./errors"
+        },
+        {
+          "path": "node_modules/bluebird/js/release/util.js",
+          "kind": "require-call",
+          "original": "./util"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/bluebird/js/release/finally.js": {
+      "bytes": 3396,
+      "imports": [
+        {
+          "path": "node_modules/bluebird/js/release/util.js",
+          "kind": "require-call",
+          "original": "./util"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/bluebird/js/release/catch_filter.js": {
+      "bytes": 1426,
+      "imports": [
+        {
+          "path": "node_modules/bluebird/js/release/util.js",
+          "kind": "require-call",
+          "original": "./util"
+        },
+        {
+          "path": "node_modules/bluebird/js/release/es5.js",
+          "kind": "require-call",
+          "original": "./es5"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/bluebird/js/release/nodeback.js": {
+      "bytes": 1560,
+      "imports": [
+        {
+          "path": "node_modules/bluebird/js/release/util.js",
+          "kind": "require-call",
+          "original": "./util"
+        },
+        {
+          "path": "node_modules/bluebird/js/release/errors.js",
+          "kind": "require-call",
+          "original": "./errors"
+        },
+        {
+          "path": "node_modules/bluebird/js/release/es5.js",
+          "kind": "require-call",
+          "original": "./es5"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/bluebird/js/release/method.js": {
+      "bytes": 1768,
+      "imports": [
+        {
+          "path": "node_modules/bluebird/js/release/util.js",
+          "kind": "require-call",
+          "original": "./util"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/bluebird/js/release/bind.js": {
+      "bytes": 1970,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/bluebird/js/release/cancel.js": {
+      "bytes": 3707,
+      "imports": [
+        {
+          "path": "node_modules/bluebird/js/release/util.js",
+          "kind": "require-call",
+          "original": "./util"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/bluebird/js/release/direct_resolve.js": {
+      "bytes": 1395,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/bluebird/js/release/synchronous_inspection.js": {
+      "bytes": 2813,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/bluebird/js/release/join.js": {
+      "bytes": 8218,
+      "imports": [
+        {
+          "path": "node_modules/bluebird/js/release/util.js",
+          "kind": "require-call",
+          "original": "./util"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/bluebird/js/release/map.js": {
+      "bytes": 5377,
+      "imports": [
+        {
+          "path": "node_modules/bluebird/js/release/util.js",
+          "kind": "require-call",
+          "original": "./util"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/bluebird/js/release/call_get.js": {
+      "bytes": 4355,
+      "imports": [
+        {
+          "path": "node_modules/bluebird/js/release/util.js",
+          "kind": "require-call",
+          "original": "./util"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/bluebird/js/release/using.js": {
+      "bytes": 7525,
+      "imports": [
+        {
+          "path": "node_modules/bluebird/js/release/util.js",
+          "kind": "require-call",
+          "original": "./util"
+        },
+        {
+          "path": "node_modules/bluebird/js/release/errors.js",
+          "kind": "require-call",
+          "original": "./errors"
+        },
+        {
+          "path": "node_modules/bluebird/js/release/util.js",
+          "kind": "require-call",
+          "original": "./util"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/bluebird/js/release/timers.js": {
+      "bytes": 2395,
+      "imports": [
+        {
+          "path": "node_modules/bluebird/js/release/util.js",
+          "kind": "require-call",
+          "original": "./util"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/bluebird/js/release/generators.js": {
+      "bytes": 7753,
+      "imports": [
+        {
+          "path": "node_modules/bluebird/js/release/errors.js",
+          "kind": "require-call",
+          "original": "./errors"
+        },
+        {
+          "path": "node_modules/bluebird/js/release/util.js",
+          "kind": "require-call",
+          "original": "./util"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/bluebird/js/release/nodeify.js": {
+      "bytes": 1647,
+      "imports": [
+        {
+          "path": "node_modules/bluebird/js/release/util.js",
+          "kind": "require-call",
+          "original": "./util"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/bluebird/js/release/promisify.js": {
+      "bytes": 12182,
+      "imports": [
+        {
+          "path": "node_modules/bluebird/js/release/util.js",
+          "kind": "require-call",
+          "original": "./util"
+        },
+        {
+          "path": "node_modules/bluebird/js/release/nodeback.js",
+          "kind": "require-call",
+          "original": "./nodeback"
+        },
+        {
+          "path": "node_modules/bluebird/js/release/errors.js",
+          "kind": "require-call",
+          "original": "./errors"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/bluebird/js/release/props.js": {
+      "bytes": 3104,
+      "imports": [
+        {
+          "path": "node_modules/bluebird/js/release/util.js",
+          "kind": "require-call",
+          "original": "./util"
+        },
+        {
+          "path": "node_modules/bluebird/js/release/es5.js",
+          "kind": "require-call",
+          "original": "./es5"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/bluebird/js/release/race.js": {
+      "bytes": 1250,
+      "imports": [
+        {
+          "path": "node_modules/bluebird/js/release/util.js",
+          "kind": "require-call",
+          "original": "./util"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/bluebird/js/release/reduce.js": {
+      "bytes": 5126,
+      "imports": [
+        {
+          "path": "node_modules/bluebird/js/release/util.js",
+          "kind": "require-call",
+          "original": "./util"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/bluebird/js/release/settle.js": {
+      "bytes": 1263,
+      "imports": [
+        {
+          "path": "node_modules/bluebird/js/release/util.js",
+          "kind": "require-call",
+          "original": "./util"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/bluebird/js/release/some.js": {
+      "bytes": 3959,
+      "imports": [
+        {
+          "path": "node_modules/bluebird/js/release/util.js",
+          "kind": "require-call",
+          "original": "./util"
+        },
+        {
+          "path": "node_modules/bluebird/js/release/errors.js",
+          "kind": "require-call",
+          "original": "./errors"
+        },
+        {
+          "path": "node_modules/bluebird/js/release/errors.js",
+          "kind": "require-call",
+          "original": "./errors"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/bluebird/js/release/filter.js": {
+      "bytes": 314,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/bluebird/js/release/each.js": {
+      "bytes": 789,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/bluebird/js/release/any.js": {
+      "bytes": 421,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/bluebird/js/release/promise.js": {
+      "bytes": 25724,
+      "imports": [
+        {
+          "path": "node_modules/bluebird/js/release/util.js",
+          "kind": "require-call",
+          "original": "./util"
+        },
+        {
+          "path": "node_modules/bluebird/js/release/es5.js",
+          "kind": "require-call",
+          "original": "./es5"
+        },
+        {
+          "path": "node_modules/bluebird/js/release/async.js",
+          "kind": "require-call",
+          "original": "./async"
+        },
+        {
+          "path": "node_modules/bluebird/js/release/errors.js",
+          "kind": "require-call",
+          "original": "./errors"
+        },
+        {
+          "path": "node_modules/bluebird/js/release/thenables.js",
+          "kind": "require-call",
+          "original": "./thenables"
+        },
+        {
+          "path": "node_modules/bluebird/js/release/promise_array.js",
+          "kind": "require-call",
+          "original": "./promise_array"
+        },
+        {
+          "path": "node_modules/bluebird/js/release/context.js",
+          "kind": "require-call",
+          "original": "./context"
+        },
+        {
+          "path": "node_modules/bluebird/js/release/debuggability.js",
+          "kind": "require-call",
+          "original": "./debuggability"
+        },
+        {
+          "path": "node_modules/bluebird/js/release/finally.js",
+          "kind": "require-call",
+          "original": "./finally"
+        },
+        {
+          "path": "node_modules/bluebird/js/release/catch_filter.js",
+          "kind": "require-call",
+          "original": "./catch_filter"
+        },
+        {
+          "path": "node_modules/bluebird/js/release/nodeback.js",
+          "kind": "require-call",
+          "original": "./nodeback"
+        },
+        {
+          "path": "node_modules/bluebird/js/release/method.js",
+          "kind": "require-call",
+          "original": "./method"
+        },
+        {
+          "path": "node_modules/bluebird/js/release/bind.js",
+          "kind": "require-call",
+          "original": "./bind"
+        },
+        {
+          "path": "node_modules/bluebird/js/release/cancel.js",
+          "kind": "require-call",
+          "original": "./cancel"
+        },
+        {
+          "path": "node_modules/bluebird/js/release/direct_resolve.js",
+          "kind": "require-call",
+          "original": "./direct_resolve"
+        },
+        {
+          "path": "node_modules/bluebird/js/release/synchronous_inspection.js",
+          "kind": "require-call",
+          "original": "./synchronous_inspection"
+        },
+        {
+          "path": "node_modules/bluebird/js/release/join.js",
+          "kind": "require-call",
+          "original": "./join"
+        },
+        {
+          "path": "node_modules/bluebird/js/release/map.js",
+          "kind": "require-call",
+          "original": "./map.js"
+        },
+        {
+          "path": "node_modules/bluebird/js/release/call_get.js",
+          "kind": "require-call",
+          "original": "./call_get.js"
+        },
+        {
+          "path": "node_modules/bluebird/js/release/using.js",
+          "kind": "require-call",
+          "original": "./using.js"
+        },
+        {
+          "path": "node_modules/bluebird/js/release/timers.js",
+          "kind": "require-call",
+          "original": "./timers.js"
+        },
+        {
+          "path": "node_modules/bluebird/js/release/generators.js",
+          "kind": "require-call",
+          "original": "./generators.js"
+        },
+        {
+          "path": "node_modules/bluebird/js/release/nodeify.js",
+          "kind": "require-call",
+          "original": "./nodeify.js"
+        },
+        {
+          "path": "node_modules/bluebird/js/release/promisify.js",
+          "kind": "require-call",
+          "original": "./promisify.js"
+        },
+        {
+          "path": "node_modules/bluebird/js/release/props.js",
+          "kind": "require-call",
+          "original": "./props.js"
+        },
+        {
+          "path": "node_modules/bluebird/js/release/race.js",
+          "kind": "require-call",
+          "original": "./race.js"
+        },
+        {
+          "path": "node_modules/bluebird/js/release/reduce.js",
+          "kind": "require-call",
+          "original": "./reduce.js"
+        },
+        {
+          "path": "node_modules/bluebird/js/release/settle.js",
+          "kind": "require-call",
+          "original": "./settle.js"
+        },
+        {
+          "path": "node_modules/bluebird/js/release/some.js",
+          "kind": "require-call",
+          "original": "./some.js"
+        },
+        {
+          "path": "node_modules/bluebird/js/release/filter.js",
+          "kind": "require-call",
+          "original": "./filter.js"
+        },
+        {
+          "path": "node_modules/bluebird/js/release/each.js",
+          "kind": "require-call",
+          "original": "./each.js"
+        },
+        {
+          "path": "node_modules/bluebird/js/release/any.js",
+          "kind": "require-call",
+          "original": "./any.js"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/bluebird/js/release/bluebird.js": {
+      "bytes": 291,
+      "imports": [
+        {
+          "path": "node_modules/bluebird/js/release/promise.js",
+          "kind": "require-call",
+          "original": "./promise"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/unzipper/lib/Buffer.js": {
+      "bytes": 253,
+      "imports": [
+        {
+          "path": "buffer",
+          "kind": "require-call",
+          "external": true
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/process-nextick-args/index.js": {
+      "bytes": 1083,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/isarray/index.js": {
+      "bytes": 132,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/readable-stream/lib/internal/streams/stream.js": {
+      "bytes": 36,
+      "imports": [
+        {
+          "path": "stream",
+          "kind": "require-call",
+          "external": true
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/safe-buffer/index.js": {
+      "bytes": 1529,
+      "imports": [
+        {
+          "path": "buffer",
+          "kind": "require-call",
+          "external": true
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/core-util-is/lib/util.js": {
+      "bytes": 3039,
+      "imports": [
+        {
+          "path": "buffer",
+          "kind": "require-call",
+          "external": true
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/inherits/inherits_browser.js": {
+      "bytes": 753,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/inherits/inherits.js": {
+      "bytes": 250,
+      "imports": [
+        {
+          "path": "util",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node_modules/inherits/inherits_browser.js",
+          "kind": "require-call",
+          "original": "./inherits_browser.js"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/readable-stream/lib/internal/streams/BufferList.js": {
+      "bytes": 2009,
+      "imports": [
+        {
+          "path": "node_modules/safe-buffer/index.js",
+          "kind": "require-call",
+          "original": "safe-buffer"
+        },
+        {
+          "path": "util",
+          "kind": "require-call",
+          "external": true
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/readable-stream/lib/internal/streams/destroy.js": {
+      "bytes": 2175,
+      "imports": [
+        {
+          "path": "node_modules/process-nextick-args/index.js",
+          "kind": "require-call",
+          "original": "process-nextick-args"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/util-deprecate/node.js": {
+      "bytes": 123,
+      "imports": [
+        {
+          "path": "util",
+          "kind": "require-call",
+          "external": true
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/readable-stream/lib/_stream_writable.js": {
+      "bytes": 20335,
+      "imports": [
+        {
+          "path": "node_modules/process-nextick-args/index.js",
+          "kind": "require-call",
+          "original": "process-nextick-args"
+        },
+        {
+          "path": "node_modules/core-util-is/lib/util.js",
+          "kind": "require-call",
+          "original": "core-util-is"
+        },
+        {
+          "path": "node_modules/inherits/inherits.js",
+          "kind": "require-call",
+          "original": "inherits"
+        },
+        {
+          "path": "node_modules/util-deprecate/node.js",
+          "kind": "require-call",
+          "original": "util-deprecate"
+        },
+        {
+          "path": "node_modules/readable-stream/lib/internal/streams/stream.js",
+          "kind": "require-call",
+          "original": "./internal/streams/stream"
+        },
+        {
+          "path": "node_modules/safe-buffer/index.js",
+          "kind": "require-call",
+          "original": "safe-buffer"
+        },
+        {
+          "path": "node_modules/readable-stream/lib/internal/streams/destroy.js",
+          "kind": "require-call",
+          "original": "./internal/streams/destroy"
+        },
+        {
+          "path": "node_modules/readable-stream/lib/_stream_duplex.js",
+          "kind": "require-call",
+          "original": "./_stream_duplex"
+        },
+        {
+          "path": "node_modules/readable-stream/lib/_stream_duplex.js",
+          "kind": "require-call",
+          "original": "./_stream_duplex"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/readable-stream/lib/_stream_duplex.js": {
+      "bytes": 4015,
+      "imports": [
+        {
+          "path": "node_modules/process-nextick-args/index.js",
+          "kind": "require-call",
+          "original": "process-nextick-args"
+        },
+        {
+          "path": "node_modules/core-util-is/lib/util.js",
+          "kind": "require-call",
+          "original": "core-util-is"
+        },
+        {
+          "path": "node_modules/inherits/inherits.js",
+          "kind": "require-call",
+          "original": "inherits"
+        },
+        {
+          "path": "node_modules/readable-stream/lib/_stream_readable.js",
+          "kind": "require-call",
+          "original": "./_stream_readable"
+        },
+        {
+          "path": "node_modules/readable-stream/lib/_stream_writable.js",
+          "kind": "require-call",
+          "original": "./_stream_writable"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/string_decoder/lib/string_decoder.js": {
+      "bytes": 9465,
+      "imports": [
+        {
+          "path": "node_modules/safe-buffer/index.js",
+          "kind": "require-call",
+          "original": "safe-buffer"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/readable-stream/lib/_stream_readable.js": {
+      "bytes": 31426,
+      "imports": [
+        {
+          "path": "node_modules/process-nextick-args/index.js",
+          "kind": "require-call",
+          "original": "process-nextick-args"
+        },
+        {
+          "path": "node_modules/isarray/index.js",
+          "kind": "require-call",
+          "original": "isarray"
+        },
+        {
+          "path": "events",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node_modules/readable-stream/lib/internal/streams/stream.js",
+          "kind": "require-call",
+          "original": "./internal/streams/stream"
+        },
+        {
+          "path": "node_modules/safe-buffer/index.js",
+          "kind": "require-call",
+          "original": "safe-buffer"
+        },
+        {
+          "path": "node_modules/core-util-is/lib/util.js",
+          "kind": "require-call",
+          "original": "core-util-is"
+        },
+        {
+          "path": "node_modules/inherits/inherits.js",
+          "kind": "require-call",
+          "original": "inherits"
+        },
+        {
+          "path": "util",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node_modules/readable-stream/lib/internal/streams/BufferList.js",
+          "kind": "require-call",
+          "original": "./internal/streams/BufferList"
+        },
+        {
+          "path": "node_modules/readable-stream/lib/internal/streams/destroy.js",
+          "kind": "require-call",
+          "original": "./internal/streams/destroy"
+        },
+        {
+          "path": "node_modules/readable-stream/lib/_stream_duplex.js",
+          "kind": "require-call",
+          "original": "./_stream_duplex"
+        },
+        {
+          "path": "node_modules/string_decoder/lib/string_decoder.js",
+          "kind": "require-call",
+          "original": "string_decoder/"
+        },
+        {
+          "path": "node_modules/readable-stream/lib/_stream_duplex.js",
+          "kind": "require-call",
+          "original": "./_stream_duplex"
+        },
+        {
+          "path": "node_modules/string_decoder/lib/string_decoder.js",
+          "kind": "require-call",
+          "original": "string_decoder/"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/readable-stream/lib/_stream_transform.js": {
+      "bytes": 7742,
+      "imports": [
+        {
+          "path": "node_modules/readable-stream/lib/_stream_duplex.js",
+          "kind": "require-call",
+          "original": "./_stream_duplex"
+        },
+        {
+          "path": "node_modules/core-util-is/lib/util.js",
+          "kind": "require-call",
+          "original": "core-util-is"
+        },
+        {
+          "path": "node_modules/inherits/inherits.js",
+          "kind": "require-call",
+          "original": "inherits"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/readable-stream/lib/_stream_passthrough.js": {
+      "bytes": 1753,
+      "imports": [
+        {
+          "path": "node_modules/readable-stream/lib/_stream_transform.js",
+          "kind": "require-call",
+          "original": "./_stream_transform"
+        },
+        {
+          "path": "node_modules/core-util-is/lib/util.js",
+          "kind": "require-call",
+          "original": "core-util-is"
+        },
+        {
+          "path": "node_modules/inherits/inherits.js",
+          "kind": "require-call",
+          "original": "inherits"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/readable-stream/readable.js": {
+      "bytes": 771,
+      "imports": [
+        {
+          "path": "stream",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node_modules/readable-stream/lib/_stream_readable.js",
+          "kind": "require-call",
+          "original": "./lib/_stream_readable.js"
+        },
+        {
+          "path": "node_modules/readable-stream/lib/_stream_writable.js",
+          "kind": "require-call",
+          "original": "./lib/_stream_writable.js"
+        },
+        {
+          "path": "node_modules/readable-stream/lib/_stream_duplex.js",
+          "kind": "require-call",
+          "original": "./lib/_stream_duplex.js"
+        },
+        {
+          "path": "node_modules/readable-stream/lib/_stream_transform.js",
+          "kind": "require-call",
+          "original": "./lib/_stream_transform.js"
+        },
+        {
+          "path": "node_modules/readable-stream/lib/_stream_passthrough.js",
+          "kind": "require-call",
+          "original": "./lib/_stream_passthrough.js"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/unzipper/lib/PullStream.js": {
+      "bytes": 4034,
+      "imports": [
+        {
+          "path": "stream",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node_modules/bluebird/js/release/bluebird.js",
+          "kind": "require-call",
+          "original": "bluebird"
+        },
+        {
+          "path": "util",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node_modules/unzipper/lib/Buffer.js",
+          "kind": "require-call",
+          "original": "./Buffer"
+        },
+        {
+          "path": "node_modules/readable-stream/readable.js",
+          "kind": "require-call",
+          "original": "readable-stream"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/unzipper/lib/NoopStream.js": {
+      "bytes": 478,
+      "imports": [
+        {
+          "path": "stream",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "util",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node_modules/readable-stream/readable.js",
+          "kind": "require-call",
+          "original": "readable-stream"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/unzipper/lib/BufferStream.js": {
+      "bytes": 669,
+      "imports": [
+        {
+          "path": "node_modules/bluebird/js/release/bluebird.js",
+          "kind": "require-call",
+          "original": "bluebird"
+        },
+        {
+          "path": "stream",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node_modules/unzipper/lib/Buffer.js",
+          "kind": "require-call",
+          "original": "./Buffer"
+        },
+        {
+          "path": "node_modules/readable-stream/readable.js",
+          "kind": "require-call",
+          "original": "readable-stream"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/unzipper/lib/parseExtraField.js": {
+      "bytes": 1042,
+      "imports": [
+        {
+          "path": "node_modules/binary/index.js",
+          "kind": "require-call",
+          "original": "binary"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/unzipper/lib/parseDateTime.js": {
+      "bytes": 536,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/unzipper/lib/parse.js": {
+      "bytes": 8401,
+      "imports": [
+        {
+          "path": "util",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "zlib",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "stream",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node_modules/binary/index.js",
+          "kind": "require-call",
+          "original": "binary"
+        },
+        {
+          "path": "node_modules/bluebird/js/release/bluebird.js",
+          "kind": "require-call",
+          "original": "bluebird"
+        },
+        {
+          "path": "node_modules/unzipper/lib/PullStream.js",
+          "kind": "require-call",
+          "original": "./PullStream"
+        },
+        {
+          "path": "node_modules/unzipper/lib/NoopStream.js",
+          "kind": "require-call",
+          "original": "./NoopStream"
+        },
+        {
+          "path": "node_modules/unzipper/lib/BufferStream.js",
+          "kind": "require-call",
+          "original": "./BufferStream"
+        },
+        {
+          "path": "node_modules/unzipper/lib/parseExtraField.js",
+          "kind": "require-call",
+          "original": "./parseExtraField"
+        },
+        {
+          "path": "node_modules/unzipper/lib/Buffer.js",
+          "kind": "require-call",
+          "original": "./Buffer"
+        },
+        {
+          "path": "node_modules/unzipper/lib/parseDateTime.js",
+          "kind": "require-call",
+          "original": "./parseDateTime"
+        },
+        {
+          "path": "node_modules/readable-stream/readable.js",
+          "kind": "require-call",
+          "original": "readable-stream"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/duplexer2/index.js": {
+      "bytes": 1676,
+      "imports": [
+        {
+          "path": "node_modules/readable-stream/readable.js",
+          "kind": "require-call",
+          "original": "readable-stream"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/unzipper/lib/parseOne.js": {
+      "bytes": 1550,
+      "imports": [
+        {
+          "path": "stream",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node_modules/unzipper/lib/parse.js",
+          "kind": "require-call",
+          "original": "./parse"
+        },
+        {
+          "path": "node_modules/duplexer2/index.js",
+          "kind": "require-call",
+          "original": "duplexer2"
+        },
+        {
+          "path": "node_modules/unzipper/lib/BufferStream.js",
+          "kind": "require-call",
+          "original": "./BufferStream"
+        },
+        {
+          "path": "node_modules/readable-stream/readable.js",
+          "kind": "require-call",
+          "original": "readable-stream"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/fstream/lib/abstract.js": {
+      "bytes": 2032,
+      "imports": [
+        {
+          "path": "stream",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node_modules/inherits/inherits.js",
+          "kind": "require-call",
+          "original": "inherits"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/graceful-fs/polyfills.js": {
+      "bytes": 10141,
+      "imports": [
+        {
+          "path": "constants",
+          "kind": "require-call",
+          "external": true
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/graceful-fs/legacy-streams.js": {
+      "bytes": 2655,
+      "imports": [
+        {
+          "path": "stream",
+          "kind": "require-call",
+          "external": true
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/graceful-fs/clone.js": {
+      "bytes": 496,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/graceful-fs/graceful-fs.js": {
+      "bytes": 12680,
+      "imports": [
+        {
+          "path": "fs",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node_modules/graceful-fs/polyfills.js",
+          "kind": "require-call",
+          "original": "./polyfills.js"
+        },
+        {
+          "path": "node_modules/graceful-fs/legacy-streams.js",
+          "kind": "require-call",
+          "original": "./legacy-streams.js"
+        },
+        {
+          "path": "node_modules/graceful-fs/clone.js",
+          "kind": "require-call",
+          "original": "./clone.js"
+        },
+        {
+          "path": "util",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "assert",
+          "kind": "require-call",
+          "external": true
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/fstream/lib/get-type.js": {
+      "bytes": 610,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/fstream/lib/link-reader.js": {
+      "bytes": 1507,
+      "imports": [
+        {
+          "path": "node_modules/graceful-fs/graceful-fs.js",
+          "kind": "require-call",
+          "original": "graceful-fs"
+        },
+        {
+          "path": "node_modules/inherits/inherits.js",
+          "kind": "require-call",
+          "original": "inherits"
+        },
+        {
+          "path": "node_modules/fstream/lib/reader.js",
+          "kind": "require-call",
+          "original": "./reader.js"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/fstream/lib/dir-reader.js": {
+      "bytes": 6501,
+      "imports": [
+        {
+          "path": "node_modules/graceful-fs/graceful-fs.js",
+          "kind": "require-call",
+          "original": "graceful-fs"
+        },
+        {
+          "path": "node_modules/inherits/inherits.js",
+          "kind": "require-call",
+          "original": "inherits"
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node_modules/fstream/lib/reader.js",
+          "kind": "require-call",
+          "original": "./reader.js"
+        },
+        {
+          "path": "assert",
+          "kind": "require-call",
+          "external": true
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/fstream/lib/file-reader.js": {
+      "bytes": 3984,
+      "imports": [
+        {
+          "path": "node_modules/graceful-fs/graceful-fs.js",
+          "kind": "require-call",
+          "original": "graceful-fs"
+        },
+        {
+          "path": "node_modules/inherits/inherits.js",
+          "kind": "require-call",
+          "original": "inherits"
+        },
+        {
+          "path": "node_modules/fstream/lib/reader.js",
+          "kind": "require-call",
+          "original": "./reader.js"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/fstream/lib/socket-reader.js": {
+      "bytes": 915,
+      "imports": [
+        {
+          "path": "node_modules/inherits/inherits.js",
+          "kind": "require-call",
+          "original": "inherits"
+        },
+        {
+          "path": "node_modules/fstream/lib/reader.js",
+          "kind": "require-call",
+          "original": "./reader.js"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/fstream/lib/proxy-reader.js": {
+      "bytes": 2004,
+      "imports": [
+        {
+          "path": "node_modules/fstream/lib/reader.js",
+          "kind": "require-call",
+          "original": "./reader.js"
+        },
+        {
+          "path": "node_modules/fstream/lib/get-type.js",
+          "kind": "require-call",
+          "original": "./get-type.js"
+        },
+        {
+          "path": "node_modules/inherits/inherits.js",
+          "kind": "require-call",
+          "original": "inherits"
+        },
+        {
+          "path": "node_modules/graceful-fs/graceful-fs.js",
+          "kind": "require-call",
+          "original": "graceful-fs"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/fstream/lib/reader.js": {
+      "bytes": 7084,
+      "imports": [
+        {
+          "path": "node_modules/graceful-fs/graceful-fs.js",
+          "kind": "require-call",
+          "original": "graceful-fs"
+        },
+        {
+          "path": "stream",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node_modules/inherits/inherits.js",
+          "kind": "require-call",
+          "original": "inherits"
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node_modules/fstream/lib/get-type.js",
+          "kind": "require-call",
+          "original": "./get-type.js"
+        },
+        {
+          "path": "node_modules/fstream/lib/abstract.js",
+          "kind": "require-call",
+          "original": "./abstract.js"
+        },
+        {
+          "path": "node_modules/fstream/lib/link-reader.js",
+          "kind": "require-call",
+          "original": "./link-reader.js"
+        },
+        {
+          "path": "node_modules/fstream/lib/dir-reader.js",
+          "kind": "require-call",
+          "original": "./dir-reader.js"
+        },
+        {
+          "path": "node_modules/fstream/lib/file-reader.js",
+          "kind": "require-call",
+          "original": "./file-reader.js"
+        },
+        {
+          "path": "node_modules/fstream/lib/socket-reader.js",
+          "kind": "require-call",
+          "original": "./socket-reader.js"
+        },
+        {
+          "path": "node_modules/fstream/lib/proxy-reader.js",
+          "kind": "require-call",
+          "original": "./proxy-reader.js"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/fs.realpath/old.js": {
+      "bytes": 8542,
+      "imports": [
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "fs",
+          "kind": "require-call",
+          "external": true
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/fs.realpath/index.js": {
+      "bytes": 1308,
+      "imports": [
+        {
+          "path": "fs",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node_modules/fs.realpath/old.js",
+          "kind": "require-call",
+          "original": "./old.js"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/concat-map/index.js": {
+      "bytes": 345,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/balanced-match/index.js": {
+      "bytes": 1219,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/brace-expansion/index.js": {
+      "bytes": 4792,
+      "imports": [
+        {
+          "path": "node_modules/concat-map/index.js",
+          "kind": "require-call",
+          "original": "concat-map"
+        },
+        {
+          "path": "node_modules/balanced-match/index.js",
+          "kind": "require-call",
+          "original": "balanced-match"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/minimatch/minimatch.js": {
+      "bytes": 26266,
+      "imports": [
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node_modules/brace-expansion/index.js",
+          "kind": "require-call",
+          "original": "brace-expansion"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/path-is-absolute/index.js": {
+      "bytes": 611,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/glob/common.js": {
+      "bytes": 6149,
+      "imports": [
+        {
+          "path": "fs",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node_modules/minimatch/minimatch.js",
+          "kind": "require-call",
+          "original": "minimatch"
+        },
+        {
+          "path": "node_modules/path-is-absolute/index.js",
+          "kind": "require-call",
+          "original": "path-is-absolute"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/glob/sync.js": {
+      "bytes": 12020,
+      "imports": [
+        {
+          "path": "node_modules/fs.realpath/index.js",
+          "kind": "require-call",
+          "original": "fs.realpath"
+        },
+        {
+          "path": "node_modules/minimatch/minimatch.js",
+          "kind": "require-call",
+          "original": "minimatch"
+        },
+        {
+          "path": "node_modules/glob/glob.js",
+          "kind": "require-call",
+          "original": "./glob.js"
+        },
+        {
+          "path": "util",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "assert",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node_modules/path-is-absolute/index.js",
+          "kind": "require-call",
+          "original": "path-is-absolute"
+        },
+        {
+          "path": "node_modules/glob/common.js",
+          "kind": "require-call",
+          "original": "./common.js"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/wrappy/wrappy.js": {
+      "bytes": 905,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/once/once.js": {
+      "bytes": 935,
+      "imports": [
+        {
+          "path": "node_modules/wrappy/wrappy.js",
+          "kind": "require-call",
+          "original": "wrappy"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/inflight/inflight.js": {
+      "bytes": 1365,
+      "imports": [
+        {
+          "path": "node_modules/wrappy/wrappy.js",
+          "kind": "require-call",
+          "original": "wrappy"
+        },
+        {
+          "path": "node_modules/once/once.js",
+          "kind": "require-call",
+          "original": "once"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/glob/glob.js": {
+      "bytes": 19445,
+      "imports": [
+        {
+          "path": "node_modules/fs.realpath/index.js",
+          "kind": "require-call",
+          "original": "fs.realpath"
+        },
+        {
+          "path": "node_modules/minimatch/minimatch.js",
+          "kind": "require-call",
+          "original": "minimatch"
+        },
+        {
+          "path": "node_modules/inherits/inherits.js",
+          "kind": "require-call",
+          "original": "inherits"
+        },
+        {
+          "path": "events",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "assert",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node_modules/path-is-absolute/index.js",
+          "kind": "require-call",
+          "original": "path-is-absolute"
+        },
+        {
+          "path": "node_modules/glob/sync.js",
+          "kind": "require-call",
+          "original": "./sync.js"
+        },
+        {
+          "path": "node_modules/glob/common.js",
+          "kind": "require-call",
+          "original": "./common.js"
+        },
+        {
+          "path": "node_modules/inflight/inflight.js",
+          "kind": "require-call",
+          "original": "inflight"
+        },
+        {
+          "path": "util",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node_modules/once/once.js",
+          "kind": "require-call",
+          "original": "once"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/fstream/node_modules/rimraf/rimraf.js": {
+      "bytes": 9225,
+      "imports": [
+        {
+          "path": "assert",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "fs",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node_modules/glob/glob.js",
+          "kind": "require-call",
+          "original": "glob"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/fstream/node_modules/mkdirp/index.js": {
+      "bytes": 2825,
+      "imports": [
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "fs",
+          "kind": "require-call",
+          "external": true
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/fstream/lib/collect.js": {
+      "bytes": 1788,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/fstream/lib/dir-writer.js": {
+      "bytes": 4501,
+      "imports": [
+        {
+          "path": "node_modules/fstream/lib/writer.js",
+          "kind": "require-call",
+          "original": "./writer.js"
+        },
+        {
+          "path": "node_modules/inherits/inherits.js",
+          "kind": "require-call",
+          "original": "inherits"
+        },
+        {
+          "path": "node_modules/fstream/node_modules/mkdirp/index.js",
+          "kind": "require-call",
+          "original": "mkdirp"
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node_modules/fstream/lib/collect.js",
+          "kind": "require-call",
+          "original": "./collect.js"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/fstream/lib/link-writer.js": {
+      "bytes": 2846,
+      "imports": [
+        {
+          "path": "node_modules/graceful-fs/graceful-fs.js",
+          "kind": "require-call",
+          "original": "graceful-fs"
+        },
+        {
+          "path": "node_modules/fstream/lib/writer.js",
+          "kind": "require-call",
+          "original": "./writer.js"
+        },
+        {
+          "path": "node_modules/inherits/inherits.js",
+          "kind": "require-call",
+          "original": "inherits"
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node_modules/fstream/node_modules/rimraf/rimraf.js",
+          "kind": "require-call",
+          "original": "rimraf"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/fstream/lib/file-writer.js": {
+      "bytes": 2593,
+      "imports": [
+        {
+          "path": "node_modules/graceful-fs/graceful-fs.js",
+          "kind": "require-call",
+          "original": "graceful-fs"
+        },
+        {
+          "path": "node_modules/fstream/lib/writer.js",
+          "kind": "require-call",
+          "original": "./writer.js"
+        },
+        {
+          "path": "node_modules/inherits/inherits.js",
+          "kind": "require-call",
+          "original": "inherits"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/fstream/lib/proxy-writer.js": {
+      "bytes": 2446,
+      "imports": [
+        {
+          "path": "node_modules/fstream/lib/writer.js",
+          "kind": "require-call",
+          "original": "./writer.js"
+        },
+        {
+          "path": "node_modules/fstream/lib/get-type.js",
+          "kind": "require-call",
+          "original": "./get-type.js"
+        },
+        {
+          "path": "node_modules/inherits/inherits.js",
+          "kind": "require-call",
+          "original": "inherits"
+        },
+        {
+          "path": "node_modules/fstream/lib/collect.js",
+          "kind": "require-call",
+          "original": "./collect.js"
+        },
+        {
+          "path": "fs",
+          "kind": "require-call",
+          "external": true
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/fstream/lib/writer.js": {
+      "bytes": 11044,
+      "imports": [
+        {
+          "path": "node_modules/graceful-fs/graceful-fs.js",
+          "kind": "require-call",
+          "original": "graceful-fs"
+        },
+        {
+          "path": "node_modules/inherits/inherits.js",
+          "kind": "require-call",
+          "original": "inherits"
+        },
+        {
+          "path": "node_modules/fstream/node_modules/rimraf/rimraf.js",
+          "kind": "require-call",
+          "original": "rimraf"
+        },
+        {
+          "path": "node_modules/fstream/node_modules/mkdirp/index.js",
+          "kind": "require-call",
+          "original": "mkdirp"
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node_modules/fstream/lib/get-type.js",
+          "kind": "require-call",
+          "original": "./get-type.js"
+        },
+        {
+          "path": "node_modules/fstream/lib/abstract.js",
+          "kind": "require-call",
+          "original": "./abstract.js"
+        },
+        {
+          "path": "node_modules/fstream/lib/dir-writer.js",
+          "kind": "require-call",
+          "original": "./dir-writer.js"
+        },
+        {
+          "path": "node_modules/fstream/lib/link-writer.js",
+          "kind": "require-call",
+          "original": "./link-writer.js"
+        },
+        {
+          "path": "node_modules/fstream/lib/file-writer.js",
+          "kind": "require-call",
+          "original": "./file-writer.js"
+        },
+        {
+          "path": "node_modules/fstream/lib/proxy-writer.js",
+          "kind": "require-call",
+          "original": "./proxy-writer.js"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/fstream/fstream.js": {
+      "bytes": 1109,
+      "imports": [
+        {
+          "path": "node_modules/fstream/lib/abstract.js",
+          "kind": "require-call",
+          "original": "./lib/abstract.js"
+        },
+        {
+          "path": "node_modules/fstream/lib/reader.js",
+          "kind": "require-call",
+          "original": "./lib/reader.js"
+        },
+        {
+          "path": "node_modules/fstream/lib/writer.js",
+          "kind": "require-call",
+          "original": "./lib/writer.js"
+        },
+        {
+          "path": "node_modules/fstream/lib/file-reader.js",
+          "kind": "require-call",
+          "original": "./lib/file-reader.js"
+        },
+        {
+          "path": "node_modules/fstream/lib/file-writer.js",
+          "kind": "require-call",
+          "original": "./lib/file-writer.js"
+        },
+        {
+          "path": "node_modules/fstream/lib/dir-reader.js",
+          "kind": "require-call",
+          "original": "./lib/dir-reader.js"
+        },
+        {
+          "path": "node_modules/fstream/lib/dir-writer.js",
+          "kind": "require-call",
+          "original": "./lib/dir-writer.js"
+        },
+        {
+          "path": "node_modules/fstream/lib/link-reader.js",
+          "kind": "require-call",
+          "original": "./lib/link-reader.js"
+        },
+        {
+          "path": "node_modules/fstream/lib/link-writer.js",
+          "kind": "require-call",
+          "original": "./lib/link-writer.js"
+        },
+        {
+          "path": "node_modules/fstream/lib/proxy-reader.js",
+          "kind": "require-call",
+          "original": "./lib/proxy-reader.js"
+        },
+        {
+          "path": "node_modules/fstream/lib/proxy-writer.js",
+          "kind": "require-call",
+          "original": "./lib/proxy-writer.js"
+        },
+        {
+          "path": "node_modules/fstream/lib/collect.js",
+          "kind": "require-call",
+          "original": "./lib/collect.js"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/unzipper/lib/extract.js": {
+      "bytes": 1486,
+      "imports": [
+        {
+          "path": "node_modules/unzipper/lib/parse.js",
+          "kind": "require-call",
+          "original": "./parse"
+        },
+        {
+          "path": "node_modules/fstream/fstream.js",
+          "kind": "require-call",
+          "original": "fstream"
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "stream",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node_modules/duplexer2/index.js",
+          "kind": "require-call",
+          "original": "duplexer2"
+        },
+        {
+          "path": "node_modules/bluebird/js/release/bluebird.js",
+          "kind": "require-call",
+          "original": "bluebird"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/big-integer/BigInteger.js": {
+      "bytes": 51934,
+      "imports": [],
+      "format": "cjs"
+    },
+    "node_modules/unzipper/lib/Decrypt.js": {
+      "bytes": 1632,
+      "imports": [
+        {
+          "path": "node_modules/big-integer/BigInteger.js",
+          "kind": "require-call",
+          "original": "big-integer"
+        },
+        {
+          "path": "stream",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node_modules/readable-stream/readable.js",
+          "kind": "require-call",
+          "original": "readable-stream"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/unzipper/lib/Open/unzip.js": {
+      "bytes": 3825,
+      "imports": [
+        {
+          "path": "node_modules/bluebird/js/release/bluebird.js",
+          "kind": "require-call",
+          "original": "bluebird"
+        },
+        {
+          "path": "node_modules/unzipper/lib/Decrypt.js",
+          "kind": "require-call",
+          "original": "../Decrypt"
+        },
+        {
+          "path": "node_modules/unzipper/lib/PullStream.js",
+          "kind": "require-call",
+          "original": "../PullStream"
+        },
+        {
+          "path": "stream",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node_modules/binary/index.js",
+          "kind": "require-call",
+          "original": "binary"
+        },
+        {
+          "path": "zlib",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node_modules/unzipper/lib/parseExtraField.js",
+          "kind": "require-call",
+          "original": "../parseExtraField"
+        },
+        {
+          "path": "node_modules/unzipper/lib/Buffer.js",
+          "kind": "require-call",
+          "original": "../Buffer"
+        },
+        {
+          "path": "node_modules/unzipper/lib/parseDateTime.js",
+          "kind": "require-call",
+          "original": "../parseDateTime"
+        },
+        {
+          "path": "node_modules/readable-stream/readable.js",
+          "kind": "require-call",
+          "original": "readable-stream"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/unzipper/lib/Open/directory.js": {
+      "bytes": 8105,
+      "imports": [
+        {
+          "path": "node_modules/binary/index.js",
+          "kind": "require-call",
+          "original": "binary"
+        },
+        {
+          "path": "node_modules/unzipper/lib/PullStream.js",
+          "kind": "require-call",
+          "original": "../PullStream"
+        },
+        {
+          "path": "node_modules/unzipper/lib/Open/unzip.js",
+          "kind": "require-call",
+          "original": "./unzip"
+        },
+        {
+          "path": "node_modules/bluebird/js/release/bluebird.js",
+          "kind": "require-call",
+          "original": "bluebird"
+        },
+        {
+          "path": "node_modules/unzipper/lib/BufferStream.js",
+          "kind": "require-call",
+          "original": "../BufferStream"
+        },
+        {
+          "path": "node_modules/unzipper/lib/parseExtraField.js",
+          "kind": "require-call",
+          "original": "../parseExtraField"
+        },
+        {
+          "path": "node_modules/unzipper/lib/Buffer.js",
+          "kind": "require-call",
+          "original": "../Buffer"
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node_modules/fstream/fstream.js",
+          "kind": "require-call",
+          "original": "fstream"
+        },
+        {
+          "path": "node_modules/unzipper/lib/parseDateTime.js",
+          "kind": "require-call",
+          "original": "../parseDateTime"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/unzipper/lib/Open/index.js": {
+      "bytes": 2760,
+      "imports": [
+        {
+          "path": "node_modules/graceful-fs/graceful-fs.js",
+          "kind": "require-call",
+          "original": "graceful-fs"
+        },
+        {
+          "path": "node_modules/bluebird/js/release/bluebird.js",
+          "kind": "require-call",
+          "original": "bluebird"
+        },
+        {
+          "path": "node_modules/unzipper/lib/Open/directory.js",
+          "kind": "require-call",
+          "original": "./directory"
+        },
+        {
+          "path": "stream",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node_modules/readable-stream/readable.js",
+          "kind": "require-call",
+          "original": "readable-stream"
+        }
+      ],
+      "format": "cjs"
+    },
+    "node_modules/unzipper/unzip.js": {
+      "bytes": 296,
+      "imports": [
+        {
+          "path": "node_modules/listenercount/index.js",
+          "kind": "require-call",
+          "original": "listenercount"
+        },
+        {
+          "path": "node_modules/buffer-indexof-polyfill/index.js",
+          "kind": "require-call",
+          "original": "buffer-indexof-polyfill"
+        },
+        {
+          "path": "node_modules/setimmediate/setImmediate.js",
+          "kind": "require-call",
+          "original": "setimmediate"
+        },
+        {
+          "path": "node_modules/unzipper/lib/parse.js",
+          "kind": "require-call",
+          "original": "./lib/parse"
+        },
+        {
+          "path": "node_modules/unzipper/lib/parseOne.js",
+          "kind": "require-call",
+          "original": "./lib/parseOne"
+        },
+        {
+          "path": "node_modules/unzipper/lib/extract.js",
+          "kind": "require-call",
+          "original": "./lib/extract"
+        },
+        {
+          "path": "node_modules/unzipper/lib/Open/index.js",
+          "kind": "require-call",
+          "original": "./lib/Open"
+        }
+      ],
+      "format": "cjs"
+    },
+    "src/install.ts": {
+      "bytes": 2097,
+      "imports": [
+        {
+          "path": "node_modules/mkdirp/dist/mjs/index.js",
+          "kind": "import-statement",
+          "original": "mkdirp"
+        },
+        {
+          "path": "src/common.ts",
+          "kind": "import-statement",
+          "original": "./common"
+        },
+        {
+          "path": "./binary",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node:stream/promises",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node:fs",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node_modules/node-fetch/src/index.js",
+          "kind": "import-statement",
+          "original": "node-fetch"
+        },
+        {
+          "path": "zlib",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "node_modules/tar/index.js",
+          "kind": "import-statement",
+          "original": "tar"
+        },
+        {
+          "path": "node_modules/unzipper/unzip.js",
+          "kind": "import-statement",
+          "original": "unzipper"
+        },
+        {
+          "path": "path",
+          "kind": "import-statement",
+          "external": true
+        },
+        {
+          "path": "console",
+          "kind": "import-statement",
+          "external": true
+        }
+      ],
+      "format": "esm"
+    },
+    "src/cli.ts": {
+      "bytes": 595,
+      "imports": [
+        {
+          "path": "src/uninstall.ts",
+          "kind": "import-statement",
+          "original": "./uninstall"
+        },
+        {
+          "path": "src/install.ts",
+          "kind": "import-statement",
+          "original": "./install"
+        },
+        {
+          "path": "src/helpres.ts",
+          "kind": "import-statement",
+          "original": "./helpres"
+        }
+      ],
+      "format": "esm"
+    },
+    "src/index.ts": {
+      "bytes": 145,
+      "imports": [
+        {
+          "path": "src/cli.ts",
+          "kind": "import-statement",
+          "original": "./cli"
+        }
+      ],
+      "format": "esm"
+    }
+  },
+  "outputs": {
+    "bin/index.js.map": {
+      "imports": [],
+      "exports": [],
+      "inputs": {},
+      "bytes": 1792535
+    },
+    "bin/index.js": {
+      "imports": [
+        {
+          "path": "fs",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "fs",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "fs",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "fs/promises",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "fs",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:process",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:stream/web",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "buffer",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "worker_threads",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:fs",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "events",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "stream",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "string_decoder",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "zlib",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "events",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "stream",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "string_decoder",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "assert",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "buffer",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "zlib",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "fs",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "fs",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "events",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "fs",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "events",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "process",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "fs",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "fs",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "util",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "fs",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "fs",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "fs",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "fs",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "assert",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "fs",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "assert",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "fs",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "crypto",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "fs",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "events",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "events",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "events",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "stream",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "buffer",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "stream",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "buffer",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "buffer",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "util",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "util",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "util",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "events",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "util",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "stream",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "stream",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "util",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "stream",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "util",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "stream",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "util",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "zlib",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "stream",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "stream",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "stream",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "constants",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "stream",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "fs",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "util",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "assert",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "assert",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "stream",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "fs",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "fs",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "fs",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "util",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "assert",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "events",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "assert",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "util",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "assert",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "fs",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "fs",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "fs",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "stream",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "stream",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "stream",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "zlib",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "stream",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "path",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "fs",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:stream/promises",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:fs",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:http",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:https",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:zlib",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:stream",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:buffer",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:stream",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:util",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:buffer",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:util",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:http",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:url",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:util",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "node:net",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "zlib",
+          "kind": "require-call",
+          "external": true
+        },
+        {
+          "path": "console",
+          "kind": "require-call",
+          "external": true
+        }
+      ],
+      "exports": [],
+      "entryPoint": "src/index.ts",
+      "inputs": {
+        "node_modules/mkdirp/dist/mjs/opts-arg.js": {
+          "bytesInOutput": 1302
+        },
+        "node_modules/mkdirp/dist/mjs/mkdirp-manual.js": {
+          "bytesInOutput": 2149
+        },
+        "node_modules/mkdirp/dist/mjs/find-made.js": {
+          "bytesInOutput": 960
+        },
+        "node_modules/mkdirp/dist/mjs/mkdirp-native.js": {
+          "bytesInOutput": 1391
+        },
+        "node_modules/mkdirp/dist/mjs/path-arg.js": {
+          "bytesInOutput": 869
+        },
+        "node_modules/mkdirp/dist/mjs/use-native.js": {
+          "bytesInOutput": 672
+        },
+        "node_modules/mkdirp/dist/mjs/index.js": {
+          "bytesInOutput": 1034
+        },
+        "src/helpres.ts": {
+          "bytesInOutput": 457
+        },
+        "src/mappings.ts": {
+          "bytesInOutput": 329
+        },
+        "node_modules/lodash/_freeGlobal.js": {
+          "bytesInOutput": 236
+        },
+        "node_modules/lodash/_root.js": {
+          "bytesInOutput": 319
+        },
+        "node_modules/lodash/_Symbol.js": {
+          "bytesInOutput": 191
+        },
+        "node_modules/lodash/_arrayMap.js": {
+          "bytesInOutput": 394
+        },
+        "node_modules/lodash/isArray.js": {
+          "bytesInOutput": 163
+        },
+        "node_modules/lodash/_getRawTag.js": {
+          "bytesInOutput": 854
+        },
+        "node_modules/lodash/_objectToString.js": {
+          "bytesInOutput": 335
+        },
+        "node_modules/lodash/_baseGetTag.js": {
+          "bytesInOutput": 652
+        },
+        "node_modules/lodash/isObjectLike.js": {
+          "bytesInOutput": 242
+        },
+        "node_modules/lodash/isSymbol.js": {
+          "bytesInOutput": 395
+        },
+        "node_modules/lodash/_baseToString.js": {
+          "bytesInOutput": 852
+        },
+        "node_modules/lodash/_baseSlice.js": {
+          "bytesInOutput": 624
+        },
+        "node_modules/lodash/_castSlice.js": {
+          "bytesInOutput": 381
+        },
+        "node_modules/lodash/_baseFindIndex.js": {
+          "bytesInOutput": 466
+        },
+        "node_modules/lodash/_baseIsNaN.js": {
+          "bytesInOutput": 205
+        },
+        "node_modules/lodash/_strictIndexOf.js": {
+          "bytesInOutput": 395
+        },
+        "node_modules/lodash/_baseIndexOf.js": {
+          "bytesInOutput": 456
+        },
+        "node_modules/lodash/_charsStartIndex.js": {
+          "bytesInOutput": 426
+        },
+        "node_modules/lodash/_asciiToArray.js": {
+          "bytesInOutput": 219
+        },
+        "node_modules/lodash/_hasUnicode.js": {
+          "bytesInOutput": 658
+        },
+        "node_modules/lodash/_unicodeToArray.js": {
+          "bytesInOutput": 1402
+        },
+        "node_modules/lodash/_stringToArray.js": {
+          "bytesInOutput": 414
+        },
+        "node_modules/lodash/toString.js": {
+          "bytesInOutput": 272
+        },
+        "node_modules/lodash/trimStart.js": {
+          "bytesInOutput": 833
+        },
+        "node_modules/find-npm-prefix/find-prefix.js": {
+          "bytesInOutput": 1344
+        },
+        "src/common.ts": {
+          "bytesInOutput": 4324
+        },
+        "node_modules/web-streams-polyfill/dist/ponyfill.es2018.js": {
+          "bytesInOutput": 168526
+        },
+        "node_modules/fetch-blob/streams.cjs": {
+          "bytesInOutput": 1368
+        },
+        "node_modules/fetch-blob/index.js": {
+          "bytesInOutput": 7257
+        },
+        "node_modules/fetch-blob/file.js": {
+          "bytesInOutput": 1359
+        },
+        "node_modules/formdata-polyfill/esm.min.js": {
+          "bytesInOutput": 3206
+        },
+        "node_modules/node-domexception/index.js": {
+          "bytesInOutput": 524
+        },
+        "node_modules/fetch-blob/from.js": {
+          "bytesInOutput": 1516
+        },
+        "node_modules/node-fetch/src/utils/multipart-parser.js": {
+          "bytesInOutput": 11198
+        },
+        "node_modules/tar/lib/high-level-opt.js": {
+          "bytesInOutput": 938
+        },
+        "node_modules/tar/node_modules/minipass/index.js": {
+          "bytesInOutput": 19706
+        },
+        "node_modules/minizlib/constants.js": {
+          "bytesInOutput": 4014
+        },
+        "node_modules/minipass/index.js": {
+          "bytesInOutput": 17225
+        },
+        "node_modules/minizlib/index.js": {
+          "bytesInOutput": 8502
+        },
+        "node_modules/tar/lib/normalize-windows-path.js": {
+          "bytesInOutput": 301
+        },
+        "node_modules/tar/lib/read-entry.js": {
+          "bytesInOutput": 2848
+        },
+        "node_modules/tar/lib/types.js": {
+          "bytesInOutput": 1297
+        },
+        "node_modules/tar/lib/large-numbers.js": {
+          "bytesInOutput": 2411
+        },
+        "node_modules/tar/lib/header.js": {
+          "bytesInOutput": 8678
+        },
+        "node_modules/tar/lib/pax.js": {
+          "bytesInOutput": 4031
+        },
+        "node_modules/tar/lib/strip-trailing-slashes.js": {
+          "bytesInOutput": 398
+        },
+        "node_modules/tar/lib/warn-mixin.js": {
+          "bytesInOutput": 940
+        },
+        "node_modules/tar/lib/winchars.js": {
+          "bytesInOutput": 601
+        },
+        "node_modules/tar/lib/strip-absolute-path.js": {
+          "bytesInOutput": 548
+        },
+        "node_modules/tar/lib/mode-fix.js": {
+          "bytesInOutput": 478
+        },
+        "node_modules/tar/lib/write-entry.js": {
+          "bytesInOutput": 16172
+        },
+        "node_modules/yallist/iterator.js": {
+          "bytesInOutput": 345
+        },
+        "node_modules/yallist/yallist.js": {
+          "bytesInOutput": 9998
+        },
+        "node_modules/tar/lib/pack.js": {
+          "bytesInOutput": 10687
+        },
+        "node_modules/fs-minipass/index.js": {
+          "bytesInOutput": 11180
+        },
+        "node_modules/tar/lib/parse.js": {
+          "bytesInOutput": 13696
+        },
+        "node_modules/tar/lib/list.js": {
+          "bytesInOutput": 3563
+        },
+        "node_modules/tar/lib/create.js": {
+          "bytesInOutput": 2815
+        },
+        "node_modules/tar/lib/replace.js": {
+          "bytesInOutput": 6431
+        },
+        "node_modules/tar/lib/update.js": {
+          "bytesInOutput": 1008
+        },
+        "node_modules/tar/node_modules/mkdirp/lib/opts-arg.js": {
+          "bytesInOutput": 1043
+        },
+        "node_modules/tar/node_modules/mkdirp/lib/path-arg.js": {
+          "bytesInOutput": 939
+        },
+        "node_modules/tar/node_modules/mkdirp/lib/find-made.js": {
+          "bytesInOutput": 909
+        },
+        "node_modules/tar/node_modules/mkdirp/lib/mkdirp-manual.js": {
+          "bytesInOutput": 1840
+        },
+        "node_modules/tar/node_modules/mkdirp/lib/mkdirp-native.js": {
+          "bytesInOutput": 1328
+        },
+        "node_modules/tar/node_modules/mkdirp/lib/use-native.js": {
+          "bytesInOutput": 643
+        },
+        "node_modules/tar/node_modules/mkdirp/index.js": {
+          "bytesInOutput": 1295
+        },
+        "node_modules/chownr/chownr.js": {
+          "bytesInOutput": 4299
+        },
+        "node_modules/tar/lib/mkdir.js": {
+          "bytesInOutput": 6064
+        },
+        "node_modules/tar/lib/normalize-unicode.js": {
+          "bytesInOutput": 414
+        },
+        "node_modules/tar/lib/path-reservations.js": {
+          "bytesInOutput": 3657
+        },
+        "node_modules/tar/lib/get-write-flag.js": {
+          "bytesInOutput": 611
+        },
+        "node_modules/tar/lib/unpack.js": {
+          "bytesInOutput": 22745
+        },
+        "node_modules/tar/lib/extract.js": {
+          "bytesInOutput": 2875
+        },
+        "node_modules/tar/index.js": {
+          "bytesInOutput": 686
+        },
+        "node_modules/listenercount/index.js": {
+          "bytesInOutput": 531
+        },
+        "node_modules/buffer-indexof-polyfill/init-buffer.js": {
+          "bytesInOutput": 384
+        },
+        "node_modules/buffer-indexof-polyfill/index.js": {
+          "bytesInOutput": 1810
+        },
+        "node_modules/setimmediate/setImmediate.js": {
+          "bytesInOutput": 5013
+        },
+        "node_modules/traverse/index.js": {
+          "bytesInOutput": 8442
+        },
+        "node_modules/chainsaw/index.js": {
+          "bytesInOutput": 3729
+        },
+        "node_modules/buffers/index.js": {
+          "bytesInOutput": 6559
+        },
+        "node_modules/binary/lib/vars.js": {
+          "bytesInOutput": 803
+        },
+        "node_modules/binary/index.js": {
+          "bytesInOutput": 9633
+        },
+        "node_modules/bluebird/js/release/es5.js": {
+          "bytesInOutput": 2251
+        },
+        "node_modules/bluebird/js/release/util.js": {
+          "bytesInOutput": 10222
+        },
+        "node_modules/bluebird/js/release/schedule.js": {
+          "bytesInOutput": 2273
+        },
+        "node_modules/bluebird/js/release/queue.js": {
+          "bytesInOutput": 2090
+        },
+        "node_modules/bluebird/js/release/async.js": {
+          "bytesInOutput": 4474
+        },
+        "node_modules/bluebird/js/release/errors.js": {
+          "bytesInOutput": 4007
+        },
+        "node_modules/bluebird/js/release/thenables.js": {
+          "bytesInOutput": 2570
+        },
+        "node_modules/bluebird/js/release/promise_array.js": {
+          "bytesInOutput": 5826
+        },
+        "node_modules/bluebird/js/release/context.js": {
+          "bytesInOutput": 2838
+        },
+        "node_modules/bluebird/js/release/debuggability.js": {
+          "bytesInOutput": 31382
+        },
+        "node_modules/bluebird/js/release/finally.js": {
+          "bytesInOutput": 3739
+        },
+        "node_modules/bluebird/js/release/catch_filter.js": {
+          "bytesInOutput": 1619
+        },
+        "node_modules/bluebird/js/release/nodeback.js": {
+          "bytesInOutput": 1800
+        },
+        "node_modules/bluebird/js/release/method.js": {
+          "bytesInOutput": 2124
+        },
+        "node_modules/bluebird/js/release/bind.js": {
+          "bytesInOutput": 2370
+        },
+        "node_modules/bluebird/js/release/cancel.js": {
+          "bytesInOutput": 4186
+        },
+        "node_modules/bluebird/js/release/direct_resolve.js": {
+          "bytesInOutput": 1919
+        },
+        "node_modules/bluebird/js/release/synchronous_inspection.js": {
+          "bytesInOutput": 3283
+        },
+        "node_modules/bluebird/js/release/join.js": {
+          "bytesInOutput": 8429
+        },
+        "node_modules/bluebird/js/release/map.js": {
+          "bytesInOutput": 5711
+        },
+        "node_modules/bluebird/js/release/call_get.js": {
+          "bytesInOutput": 5011
+        },
+        "node_modules/bluebird/js/release/using.js": {
+          "bytesInOutput": 7434
+        },
+        "node_modules/bluebird/js/release/timers.js": {
+          "bytesInOutput": 2886
+        },
+        "node_modules/bluebird/js/release/generators.js": {
+          "bytesInOutput": 8213
+        },
+        "node_modules/bluebird/js/release/nodeify.js": {
+          "bytesInOutput": 1865
+        },
+        "node_modules/bluebird/js/release/promisify.js": {
+          "bytesInOutput": 12899
+        },
+        "node_modules/bluebird/js/release/props.js": {
+          "bytesInOutput": 3631
+        },
+        "node_modules/bluebird/js/release/race.js": {
+          "bytesInOutput": 1487
+        },
+        "node_modules/bluebird/js/release/reduce.js": {
+          "bytesInOutput": 5575
+        },
+        "node_modules/bluebird/js/release/settle.js": {
+          "bytesInOutput": 1544
+        },
+        "node_modules/bluebird/js/release/some.js": {
+          "bytesInOutput": 4511
+        },
+        "node_modules/bluebird/js/release/filter.js": {
+          "bytesInOutput": 475
+        },
+        "node_modules/bluebird/js/release/each.js": {
+          "bytesInOutput": 955
+        },
+        "node_modules/bluebird/js/release/any.js": {
+          "bytesInOutput": 616
+        },
+        "node_modules/bluebird/js/release/promise.js": {
+          "bytesInOutput": 26770
+        },
+        "node_modules/bluebird/js/release/bluebird.js": {
+          "bytesInOutput": 473
+        },
+        "node_modules/unzipper/lib/Buffer.js": {
+          "bytesInOutput": 342
+        },
+        "node_modules/process-nextick-args/index.js": {
+          "bytesInOutput": 1394
+        },
+        "node_modules/isarray/index.js": {
+          "bytesInOutput": 245
+        },
+        "node_modules/readable-stream/lib/internal/streams/stream.js": {
+          "bytesInOutput": 168
+        },
+        "node_modules/safe-buffer/index.js": {
+          "bytesInOutput": 1684
+        },
+        "node_modules/core-util-is/lib/util.js": {
+          "bytesInOutput": 2069
+        },
+        "node_modules/inherits/inherits_browser.js": {
+          "bytesInOutput": 900
+        },
+        "node_modules/inherits/inherits.js": {
+          "bytesInOutput": 338
+        },
+        "node_modules/readable-stream/lib/internal/streams/BufferList.js": {
+          "bytesInOutput": 2541
+        },
+        "node_modules/readable-stream/lib/internal/streams/destroy.js": {
+          "bytesInOutput": 2206
+        },
+        "node_modules/util-deprecate/node.js": {
+          "bytesInOutput": 150
+        },
+        "node_modules/readable-stream/lib/_stream_writable.js": {
+          "bytesInOutput": 15342
+        },
+        "node_modules/readable-stream/lib/_stream_duplex.js": {
+          "bytesInOutput": 2561
+        },
+        "node_modules/string_decoder/lib/string_decoder.js": {
+          "bytesInOutput": 7394
+        },
+        "node_modules/readable-stream/lib/_stream_readable.js": {
+          "bytesInOutput": 23820
+        },
+        "node_modules/readable-stream/lib/_stream_transform.js": {
+          "bytesInOutput": 3511
+        },
+        "node_modules/readable-stream/lib/_stream_passthrough.js": {
+          "bytesInOutput": 635
+        },
+        "node_modules/readable-stream/readable.js": {
+          "bytesInOutput": 932
+        },
+        "node_modules/unzipper/lib/PullStream.js": {
+          "bytesInOutput": 4189
+        },
+        "node_modules/unzipper/lib/NoopStream.js": {
+          "bytesInOutput": 599
+        },
+        "node_modules/unzipper/lib/BufferStream.js": {
+          "bytesInOutput": 778
+        },
+        "node_modules/unzipper/lib/parseExtraField.js": {
+          "bytesInOutput": 1029
+        },
+        "node_modules/unzipper/lib/parseDateTime.js": {
+          "bytesInOutput": 515
+        },
+        "node_modules/unzipper/lib/parse.js": {
+          "bytesInOutput": 8761
+        },
+        "node_modules/duplexer2/index.js": {
+          "bytesInOutput": 2001
+        },
+        "node_modules/unzipper/lib/parseOne.js": {
+          "bytesInOutput": 1675
+        },
+        "node_modules/fstream/lib/abstract.js": {
+          "bytesInOutput": 2370
+        },
+        "node_modules/graceful-fs/polyfills.js": {
+          "bytesInOutput": 9818
+        },
+        "node_modules/graceful-fs/legacy-streams.js": {
+          "bytesInOutput": 3032
+        },
+        "node_modules/graceful-fs/clone.js": {
+          "bytesInOutput": 694
+        },
+        "node_modules/graceful-fs/graceful-fs.js": {
+          "bytesInOutput": 12477
+        },
+        "node_modules/fstream/lib/get-type.js": {
+          "bytesInOutput": 868
+        },
+        "node_modules/fstream/lib/link-reader.js": {
+          "bytesInOutput": 1282
+        },
+        "node_modules/fstream/lib/dir-reader.js": {
+          "bytesInOutput": 6022
+        },
+        "node_modules/fstream/lib/file-reader.js": {
+          "bytesInOutput": 3379
+        },
+        "node_modules/fstream/lib/socket-reader.js": {
+          "bytesInOutput": 850
+        },
+        "node_modules/fstream/lib/proxy-reader.js": {
+          "bytesInOutput": 2201
+        },
+        "node_modules/fstream/lib/reader.js": {
+          "bytesInOutput": 5995
+        },
+        "node_modules/fs.realpath/old.js": {
+          "bytesInOutput": 6309
+        },
+        "node_modules/fs.realpath/index.js": {
+          "bytesInOutput": 1617
+        },
+        "node_modules/concat-map/index.js": {
+          "bytesInOutput": 502
+        },
+        "node_modules/balanced-match/index.js": {
+          "bytesInOutput": 1563
+        },
+        "node_modules/brace-expansion/index.js": {
+          "bytesInOutput": 4551
+        },
+        "node_modules/minimatch/minimatch.js": {
+          "bytesInOutput": 18309
+        },
+        "node_modules/path-is-absolute/index.js": {
+          "bytesInOutput": 657
+        },
+        "node_modules/glob/common.js": {
+          "bytesInOutput": 6499
+        },
+        "node_modules/glob/sync.js": {
+          "bytesInOutput": 11094
+        },
+        "node_modules/wrappy/wrappy.js": {
+          "bytesInOutput": 852
+        },
+        "node_modules/once/once.js": {
+          "bytesInOutput": 1215
+        },
+        "node_modules/inflight/inflight.js": {
+          "bytesInOutput": 1166
+        },
+        "node_modules/glob/glob.js": {
+          "bytesInOutput": 17109
+        },
+        "node_modules/fstream/node_modules/rimraf/rimraf.js": {
+          "bytesInOutput": 8808
+        },
+        "node_modules/fstream/node_modules/mkdirp/index.js": {
+          "bytesInOutput": 2340
+        },
+        "node_modules/fstream/lib/collect.js": {
+          "bytesInOutput": 1808
+        },
+        "node_modules/fstream/lib/dir-writer.js": {
+          "bytesInOutput": 3475
+        },
+        "node_modules/fstream/lib/link-writer.js": {
+          "bytesInOutput": 2432
+        },
+        "node_modules/fstream/lib/file-writer.js": {
+          "bytesInOutput": 2742
+        },
+        "node_modules/fstream/lib/proxy-writer.js": {
+          "bytesInOutput": 2439
+        },
+        "node_modules/fstream/lib/writer.js": {
+          "bytesInOutput": 9838
+        },
+        "node_modules/fstream/fstream.js": {
+          "bytesInOutput": 1233
+        },
+        "node_modules/unzipper/lib/extract.js": {
+          "bytesInOutput": 1466
+        },
+        "node_modules/big-integer/BigInteger.js": {
+          "bytesInOutput": 48900
+        },
+        "node_modules/unzipper/lib/Decrypt.js": {
+          "bytesInOutput": 1872
+        },
+        "node_modules/unzipper/lib/Open/unzip.js": {
+          "bytesInOutput": 3710
+        },
+        "node_modules/unzipper/lib/Open/directory.js": {
+          "bytesInOutput": 7279
+        },
+        "node_modules/unzipper/lib/Open/index.js": {
+          "bytesInOutput": 3201
+        },
+        "node_modules/unzipper/unzip.js": {
+          "bytesInOutput": 365
+        },
+        "src/uninstall.ts": {
+          "bytesInOutput": 441
+        },
+        "src/install.ts": {
+          "bytesInOutput": 992
+        },
+        "node_modules/node-fetch/src/index.js": {
+          "bytesInOutput": 10400
+        },
+        "node_modules/data-uri-to-buffer/dist/index.js": {
+          "bytesInOutput": 1148
+        },
+        "node_modules/node-fetch/src/body.js": {
+          "bytesInOutput": 7925
+        },
+        "node_modules/node-fetch/src/errors/base.js": {
+          "bytesInOutput": 298
+        },
+        "node_modules/node-fetch/src/errors/fetch-error.js": {
+          "bytesInOutput": 454
+        },
+        "node_modules/node-fetch/src/utils/is.js": {
+          "bytesInOutput": 1200
+        },
+        "node_modules/node-fetch/src/headers.js": {
+          "bytesInOutput": 5767
+        },
+        "node_modules/node-fetch/src/utils/is-redirect.js": {
+          "bytesInOutput": 140
+        },
+        "node_modules/node-fetch/src/response.js": {
+          "bytesInOutput": 3150
+        },
+        "node_modules/node-fetch/src/request.js": {
+          "bytesInOutput": 6431
+        },
+        "node_modules/node-fetch/src/utils/get-search.js": {
+          "bytesInOutput": 295
+        },
+        "node_modules/node-fetch/src/utils/referrer.js": {
+          "bytesInOutput": 4084
+        },
+        "node_modules/node-fetch/src/errors/abort-error.js": {
+          "bytesInOutput": 124
+        },
+        "src/cli.ts": {
+          "bytesInOutput": 427
+        },
+        "src/index.ts": {
+          "bytesInOutput": 27
+        }
+      },
+      "bytes": 1006521
+    }
+  }
+}

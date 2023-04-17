@@ -4,8 +4,8 @@
   "description": "Example App",
   "main": "index.js",
   "scripts": {
-    "postinstall": "go-npm install",
-    "preuninstall": "go-npm uninstall"
+    "postinstall": "npm-go-bin install",
+    "preuninstall": "npm-go-bin uninstall"
   },
   "goBinary": {
     "name": "myBinaryName",
