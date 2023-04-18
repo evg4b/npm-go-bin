@@ -1,6 +1,7 @@
 import { join } from 'path';
+
 const { unlinkSync } = require('fs');
-const { parsePackageJson, getInstallationPath } = require('./common');
+const { parsePackageJson, getInstallationPath } = require('./helpres');
 
 export async function uninstall(): Promise<void> {
 

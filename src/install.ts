@@ -1,14 +1,13 @@
-import { mkdirpSync } from 'mkdirp';
-import { getInstallationPath, parsePackageJson } from './common';
-import { verifyAndPlaceBinary } from './binary';
-import { finished } from 'node:stream/promises';
-import { createWriteStream } from 'node:fs';
+import { getInstallationPath, parsePackageJson } from './helpres';
+import { finished } from 'stream/promises';
+import { createWriteStream } from 'fs';
 import fetch from 'node-fetch';
 import { createGunzip } from 'zlib';
-import tar, { extract as extractTar } from 'tar';
+import { extract as extractTar } from 'tar';
 import { Extract as extractZip } from 'unzipper';
 import { join } from 'path';
-import * as console from 'console';
+import { verifyAndPlaceBinary } from './binary';
+import { mkdir } from 'fs/promises';
 
 /**
  * Select a resource handling strategy based on given options.
@@ -16,7 +15,7 @@ import * as console from 'console';
 function getStrategy(stream: NodeJS.ReadableStream, opts: PackageJsonInfo, path: string): NodeJS.WritableStream {
   if (opts.url.endsWith('.tar.gz')) {
     return stream.pipe(createGunzip())
-      .pipe(extractTar({ path }));
+      .pipe(extractTar({ cwd: path }, [opts.binName]));
   }
 
   if (opts.url.endsWith('.zip')) {
@@ -37,29 +36,18 @@ function getStrategy(stream: NodeJS.ReadableStream, opts: PackageJsonInfo, path:
 export async function install(): Promise<void> {
   const opts = await parsePackageJson();
 
-  mkdirpSync(opts.binPath);
+  await mkdir(opts.binPath, { recursive: true });
 
   console.log('Downloading from URL: ' + opts.url);
 
-  try {
-    const response = await fetch(opts.url)
-      .then(res => !res.ok
-        ? Promise.reject(new Error(`Error downloading binary. HTTP Status Code: ${ res.status } - ${ res.statusText }`))
-        : res,
-      );
+  const path = await getInstallationPath();
 
-    const path = await getInstallationPath();
-
-    // await finished(getStrategy(response.body, opts, path));
-    await finished(
-      response.body
-        .pipe(createGunzip())
-        .pipe(extractTar({ path: 'uncors' }))
-        .pipe(createWriteStream(path + '/uncors'))
+  const response = await fetch(opts.url)
+    .then(res => !res.ok
+      ? Promise.reject(new Error(`Error downloading binary. HTTP Status Code: ${ res.status } - ${ res.statusText }`))
+      : res,
     );
-    // await verifyAndPlaceBinary(opts.binName, opts.binPath);
 
-  } catch (e) {
-    throw new Error(`Error downloading from URL: ${ e }`);
-  }
+  await finished(getStrategy(response.body, opts, path));
+  await verifyAndPlaceBinary(opts.binName, path);
 }

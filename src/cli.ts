@@ -2,7 +2,7 @@ import { uninstall } from './uninstall';
 import { install } from './install';
 import { assertIsDefined } from './helpres';
 
-const actions = { install, uninstall, };
+const actions = { install, uninstall };
 
 // Parse command line arguments and call the right action
 export default async (argv) => {

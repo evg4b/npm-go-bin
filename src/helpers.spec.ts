@@ -1,5 +1,5 @@
 import * as fs from 'fs';
-import { getInstallationPath, getUrl, parsePackageJson } from './common';
+import { getInstallationPath, getUrl, parsePackageJson } from './helpres';
 import { join, sep } from 'path';
 
 jest.mock('fs');

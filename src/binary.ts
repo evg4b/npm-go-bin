@@ -1,6 +1,6 @@
 import { join } from 'path';
-import { chmodSync, copyFileSync, existsSync, unlinkSync } from 'fs';
-import { getInstallationPath } from './common';
+import { chmodSync, copyFileSync, existsSync } from 'fs';
+import { getInstallationPath } from './helpres';
 
 export async function verifyAndPlaceBinary(binName: string, binPath: string) {
   if (!existsSync(join(binPath, binName))) {
@@ -11,7 +11,6 @@ export async function verifyAndPlaceBinary(binName: string, binPath: string) {
 
   // Move the binary file and make sure it is executable
   copyFileSync(join(binPath, binName), join(installationPath, binName));
-  unlinkSync(join(binPath, binName));
   chmodSync(join(installationPath, binName), '755');
 
   console.log('Placed binary on', join(installationPath, binName));
