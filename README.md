@@ -1,17 +1,6 @@
-## Go NPM
+## NPM-GO-BIN 
 
-### (@go-task): MODIFICATIONS FROM gzuidhof/go-npm FORK
-
-* Added `{{archive_ext}}` to recognize `.zip` packages on Windows and `.tar.gz` on macOS and Linux.
-* Fixed error when trying to remove the binary from a previous installation.
-* Add support for local npm prefix ([#1](https://github.com/go-task/go-npm/pull/1)).
-* Added support for [pnpm](https://pnpm.io/) ([#3](https://github.com/go-task/go-npm/pull/3)).
-
-### (@gzuidhof): MODIFICATIONS FROM BASE `go-npm` PACKAGE
-* Support for zip and non-compressed binaries.
-* Added support for `arm64` architecture.
-* Fix for use on Windows platform (the binary would get placed in the wrong place for consumers).
-* Shipped as a bundle using `esbuild`, removing 70 packages of dependencies (including huge things like Babel). Now your users will only have to download one additional package (`@gzuidhof/go-npm`).
+The lightweight (only 659.9kb instead of 1.5mb) alternative to [go-npm](https://github.com/sanathkr/go-npm) based on their [fork](https://github.com/go-task/go-npm).
 
 ### Distribute cross-platform Go binaries via NPM
 
@@ -118,7 +107,6 @@ To install:
 To Update:
 
 `npm update -g your-app-name`
-
 
 ---
 
