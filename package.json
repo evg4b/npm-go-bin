@@ -8,7 +8,8 @@
     "test": "jest",
     "build": "rm -rf ./bin && esbuild --bundle src/index.ts --outfile=\"./bin/index.js\" --platform=node --minify-whitespace",
     "dev": "rm -rf ./bin && esbuild --watch --bundle src/index.ts --outfile=\"./bin/index.js\" --sourcemap --platform=node --metafile=meta.json",
-    "prepublishOnly": "npm i && npm run build"
+    "prepublishOnly": "npm i && npm run build",
+    "lint": "eslint ."
   },
   "author": "Yauheni Abramovich",
   "packageManager": "yarn@3.5.0",
