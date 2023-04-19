@@ -1,6 +1,6 @@
 import { join } from 'path';
 import { chmodSync, copyFileSync, existsSync } from 'fs';
-import { getInstallationPath } from './helpres';
+import { getInstallationPath } from '../helpres/helpres';
 
 export async function verifyAndPlaceBinary(binName: string, binPath: string) {
   if (!existsSync(join(binPath, binName))) {

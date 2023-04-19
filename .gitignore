@@ -32,3 +32,4 @@ bin
 !.yarn/sdks
 !.yarn/versions
 yarn-error.log
+meta.json

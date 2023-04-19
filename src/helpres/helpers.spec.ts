@@ -1,11 +1,7 @@
-import * as fs from 'fs';
-import { getInstallationPath, getUrl, parsePackageJson } from './helpres';
+import { getInstallationPath, getPackageInfo, resolveUrl } from './helpres';
 import { join, sep } from 'path';
 
-jest.mock('fs');
-jest.mock('mkdirp');
-
-describe('common', () => {
+describe('helpers', () => {
   describe('getInstallationPath()', () => {
     let env;
 
@@ -39,13 +35,13 @@ describe('common', () => {
 
   describe('getUrl', () => {
     it('should get url from given string url', () => {
-      const url = getUrl('http://url');
+      const url = resolveUrl('http://url');
 
       expect(url).toEqual('http://url');
     });
 
     it('should get specific url for current platform', () => {
-      const url = getUrl({
+      const url = resolveUrl({
         default: 'http://url.tar.gz',
         windows: 'http://url.exe.zip',
       });
@@ -55,7 +51,7 @@ describe('common', () => {
     });
 
     it('should get default url for current platform', () => {
-      const url = getUrl({
+      const url = resolveUrl({
         default: 'http://url.tar.gz',
         windows: 'http://url.exe.zip',
       });
@@ -66,7 +62,7 @@ describe('common', () => {
     });
 
     it('should get specific url for current platform and architecture', () => {
-      const url = getUrl({
+      const url = resolveUrl({
         default: 'http://url.tar.gz',
         windows: 'http://url.exe.zip',
         darwin: {
@@ -80,7 +76,7 @@ describe('common', () => {
     });
 
     it('should get default url for current platform and architecture', () => {
-      const url = getUrl({
+      const url = resolveUrl({
         default: 'http://url.tar.gz',
         windows: 'http://url.exe.zip',
         darwin: {
@@ -110,20 +106,20 @@ describe('common', () => {
         // @ts-ignore
         process.arch = 'mips';
 
-        expect(parsePackageJson()).toBeUndefined();
+        expect(getPackageInfo(platform, arch)).toBeUndefined();
       });
 
       it('should return if platform is unsupported', () => {
         // @ts-ignore
         process.platform = 'amiga';
 
-        expect(parsePackageJson()).toBeUndefined();
+        expect(getPackageInfo(platform, arch)).toBeUndefined();
       });
 
       it('should return if package.json does not exist', () => {
         // fs.existsSync.mockReturnValueOnce(false);
 
-        expect(parsePackageJson()).toBeUndefined();
+        expect(getPackageInfo(platform, arch)).toBeUndefined();
       });
     });
 
@@ -142,7 +138,7 @@ describe('common', () => {
         // @ts-ignore
         process.platform = 'win32';
 
-        expect(parsePackageJson()).toMatchObject({
+        expect(getPackageInfo(platform, arch)).toMatchObject({
           binName: 'command.exe',
           url: 'https://github.com/foo/bar/releases/v1.0.0/assets/command.exe',
         });
@@ -162,7 +158,7 @@ describe('common', () => {
         // @ts-ignore
         process.platform = 'darwin';
 
-        expect(parsePackageJson()).toMatchObject({
+        expect(getPackageInfo(platform, arch)).toMatchObject({
           binName: 'command',
           url: 'https://github.com/foo/bar/releases/v1.0.0/assets/command',
         });

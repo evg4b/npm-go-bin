@@ -2,12 +2,12 @@
   "name": "npm-go-bin",
   "version": "0.0.1",
   "description": "Distribute and install Go binaries via NPM",
-  "main": "./src/index.ts",
-  "bin": "./bin/index.js",
+  "main": "./src/cli.ts",
+  "bin": "./bin/cli.js",
   "scripts": {
     "test": "jest",
-    "build": "rm -rf ./bin && esbuild --bundle src/index.ts --outfile=\"./bin/index.js\" --platform=node --minify-whitespace",
-    "dev": "rm -rf ./bin && esbuild --watch --bundle src/index.ts --outfile=\"./bin/index.js\" --sourcemap --platform=node --metafile=meta.json",
+    "build": "rm -rf ./bin && esbuild --bundle src/cli.ts --outfile=\"./bin/cli.js\" --platform=node --minify-whitespace",
+    "dev": "rm -rf ./bin && esbuild --watch --bundle src/cli.ts --outfile=\"./bin/cli.js\" --sourcemap --platform=node --metafile=meta.json",
     "prepublishOnly": "npm i && npm run build",
     "lint": "eslint ."
   },
@@ -40,7 +40,9 @@
   },
   "go-bin": {
     "name": "uncors",
-    "path": "./bin",
     "url": "https://github.com/evg4b/uncors/releases/download/v{{version}}/uncors_{{version}}_{{platform}}_{{arch}}.tar.gz"
+  },
+  "dependencies": {
+    "ts-jest": "^29.1.0"
   }
 }

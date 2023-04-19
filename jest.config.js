@@ -1,6 +1,8 @@
 module.exports = {
+  verbose: true,
+  preset: 'ts-jest',
   displayName: 'npm-go-bin',
   transform: {
-    "^.+\\.tsx?$": ["esbuild-jest"]
+    '^.+\\.ts?$': ['esbuild-jest', { sourcemap: true }]
   }
 };
