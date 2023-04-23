@@ -1,5 +1,8 @@
-import { getInstallationPath, getPackageInfo, resolveUrl } from './helpres';
+import { getPackageInfo, resolveUrl } from './helpres';
 import { join, sep } from 'path';
+import { getInstallationPath } from './paths';
+
+const prefix = '';
 
 describe('helpers', () => {
   describe('getInstallationPath()', () => {
@@ -10,7 +13,7 @@ describe('helpers', () => {
     afterEach(() => process.env = env);
 
     it('should get binaries path from `npm bin`', async () => {
-      const path = await getInstallationPath();
+      const path = await getInstallationPath(prefix);
 
       expect(path).toEqual(sep + join('usr', 'local', 'bin'));
     });
@@ -18,7 +21,7 @@ describe('helpers', () => {
     it('should get binaries path from env', async () => {
       process.env.npm_config_prefix = '/usr/local';
 
-      const path = await getInstallationPath();
+      const path = await getInstallationPath(prefix);
 
       expect(path).toEqual(sep + join('usr', 'local', 'bin'));
     });
@@ -27,7 +30,7 @@ describe('helpers', () => {
       expect(async () => {
         process.env.npm_config_prefix = undefined;
 
-        await getInstallationPath();
+        await getInstallationPath(prefix);
       })
         .toThrowError('Error finding binary installation directory');
     });
@@ -35,7 +38,7 @@ describe('helpers', () => {
 
   describe('getUrl', () => {
     it('should get url from given string url', () => {
-      const url = resolveUrl('http://url');
+      const url = resolveUrl({}, 'windows', 'http://url');
 
       expect(url).toEqual('http://url');
     });

@@ -1,6 +1,6 @@
 ## NPM-GO-BIN 
 
-The lightweight (only 659.9kb instead of 1.5mb) alternative to [go-npm](https://github.com/sanathkr/go-npm) based on their [fork](https://github.com/go-task/go-npm).
+The lightweight (only 653.4kb instead of 1.5mb) alternative to [go-npm](https://github.com/sanathkr/go-npm) based on their [fork](https://github.com/go-task/go-npm).
 
 ### Distribute cross-platform Go binaries via NPM
 
@@ -10,7 +10,7 @@ Applications written in Golang are portable - you can easily cross-compile binar
 
 ## Kidding me! Why NPM?
 * **Cross-platform**: NPM is the only popular package manager that works cross-platform.
-* **Lower barier to entry**: Most developers have NPM installed already.
+* **Lower barrier to entry**: Most developers have NPM installed already.
 * **Pain free publishing**: It just takes one command to publish - `npm publish`
 * **Dead simple install & update story**: `npm install/update -g your-awesome-app`
 * **Adds $PATH**: NPM will automatically add your binary location to $PATH and generate .cmd file for Windows. Your app just works after installation!
@@ -34,10 +34,13 @@ builds:
       - amd64
 ```
 
-`go-npm` will pull the appropriate binary for the platform & architecture where the package is being installed.
+`npm-go-bin` will pull the appropriate binary for the platform & architecture where the package is being installed.
 
 ### 2. Create a package.json file for your NPM app
-To publish to NPM, you need to create a `package.json` file. You give your application a name, link to Readme, Github repository etc, and more importantly add `go-npm` as a dependency. You can create this file in an empty directory in your project or in a separate Git repository altogether. It is your choice.
+
+To publish to NPM, you need to create a `package.json` file. You give your application a name, link to Readme, Github repository etc, and
+more importantly add `npm-go-bin` as a dependency. You can create this file in an empty directory in your project or in a separate Git
+repository altogether. It is your choice.
 
 **Create package.json**
 
@@ -45,38 +48,43 @@ To publish to NPM, you need to create a `package.json` file. You give your appli
 
 Answer the questions to create an initial package.json file
 
-**Add go-npm dependency**
+**Add npm-go-bin dependency**
 
 From the directory containing package.json file, do
 
-`$ npm install @go-task/go-npm --save`
+`$ npm install npm-go-bin --save`
 
-This will install go-npm under to your package.json file. It will also create a `node_modules` directory where the `go-npm` package is downloaded. You don't need this directory since you are only going to publish the module and not consume it yourself. Let's go ahead and delete it.
+This will install npm-go-bin under to your package.json file. It will also create a `node_modules` directory where the `npm-go-bin` package
+is downloaded. You don't need this directory since you are only going to publish the module and not consume it yourself. Let's go ahead and
+delete it.
 
 `$ rm -r node_modules`
 
 **Add postinstall and preuninstall scripts**
-Here is the magic: You ask to run `go-npm install` after it completes installing your package. This will pull down binaries from Github or Amazon S3 and install in NPM's `bin` directory. Binaries under bin directory are immediately available for use in your Terminal.
+Here is the magic: You ask to run `npm-go-bin install` after it completes installing your package. This will pull down binaries from Github
+or Amazon S3 and install in NPM's `bin` directory. Binaries under bin directory are immediately available for use in your Terminal.
 
 Edit `package.json` file and add the following:
+
 ```
 "scripts": {
-    "postinstall": "go-npm install",
-    "preuninstall": "go-npm uninstall",
+    "postinstall": "npm-go-bin install",
+    "preuninstall": "npm-go-bin uninstall"
 }
 ```
 
-`go-npm uninstall` simply deletes the binary from `bin` directory before NPM uninstalls your package.
+`npm-go-bin uninstall` simply deletes the binary from `bin` directory before NPM uninstalls your package.
 
 **Configure your binary path**
 
-You need to tell `go-npm` where to download the binaries from, and where to install them. Edit `package.json` file and add the following configuration.
+You need to tell `npm-go-bin` where to download the binaries from, and where to install them. Edit `package.json` file and add the following
+configuration.
 
 ```
-"goBinary": {
+"go-bin": {
       "name": "command-name",
-      "path": "./bin",
       "url": "https://github.com/user/my-go-package/releases/download/v{{version}}/myGoPackage_{{version}}_{{platform}}_{{arch}}.tar.gz"
+}
 ```
 
 * *name*: Name of the command users will use to run your binary.
@@ -96,18 +104,17 @@ If you use `goreleaser` to publish your modules, it will automatically set the r
 
 All that's left now is publish to NPM. As I promised before, just one command
 
-`$ npm publish`
+```bash
+npm publish
+```
 
 ### 3. Distribute to users
 
 To install:
 
-`npm install -g your-app-name`
+global: `npm install -g your-app-name` or local: `npm install your-app-name --save-dev`
+
 
 To Update:
 
-`npm update -g your-app-name`
-
----
-
-With ❤️ to the community by [Sanath Kumar Ramesh](http://twitter.com/sanathkr_)
+global: `npm update -g your-app-name` or local: `npm update your-app-name`

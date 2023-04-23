@@ -30,7 +30,7 @@ export const resolveUrl = (url: UrlMapping, platform: Platform, arch: Architectu
   return internalUrl[arch] ?? internalUrl.default;
 };
 
-export async function getPackageInfo(platform: Platform, arch: Architecture, prefix: string): Promise<PackageInfo> {
+export const getPackageInfo = async (platform: Platform, arch: Architecture, prefix: string): Promise<PackageInfo> => {
   const packageJsonPath = join(prefix, 'package.json');
 
   if (!await checkFileExists(packageJsonPath)) {
@@ -64,10 +64,8 @@ export async function getPackageInfo(platform: Platform, arch: Architecture, pre
     .replace(/{{archive_ext}}/g, archiveExt);
 
   return { binName, url, version };
-}
+};
 
-function checkFileExists(file: string): Promise<boolean> {
-  return access(file, constants.F_OK)
-    .then(() => true)
-    .catch(() => false);
-}
+const checkFileExists = (file: string): Promise<boolean> => access(file, constants.F_OK)
+  .then(() => true)
+  .catch(() => false);

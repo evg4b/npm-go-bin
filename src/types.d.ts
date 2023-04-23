@@ -26,3 +26,6 @@ declare module 'find-npm-prefix' {
 type Platform = 'darwin' | 'linux' | 'windows' | 'freebsd';
 type Architecture = '386' | 'amd64' | 'arm' | 'arm64';
 type Action = (platform: Platform, arch: Architecture, cwd: string) => Promise<void>;
+
+type WritableStream = NodeJS.WritableStream;
+type ReadableStream = NodeJS.ReadableStream;
