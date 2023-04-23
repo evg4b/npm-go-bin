@@ -1,13 +1,13 @@
 import { join } from 'path';
 import { chmodSync, copyFileSync, existsSync } from 'fs';
-import { getInstallationPath } from '../helpres/helpres';
+import { getInstallationPath } from '../helpres';
 
-export async function verifyAndPlaceBinary(binName: string, binPath: string) {
+export async function verifyAndPlaceBinary(binName: string, binPath: string, prefix: string) {
   if (!existsSync(join(binPath, binName))) {
     throw new Error(`Downloaded binary does not contain the binary specified in configuration - ${ binName }`);
   }
 
-  const installationPath = await getInstallationPath();
+  const installationPath = await getInstallationPath(prefix);
 
   // Move the binary file and make sure it is executable
   copyFileSync(join(binPath, binName), join(installationPath, binName));

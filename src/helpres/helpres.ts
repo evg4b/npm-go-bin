@@ -1,30 +1,8 @@
 import { join } from 'path';
-import findPrefix from 'find-npm-prefix';
-import { access, mkdir, readFile } from 'fs/promises';
+import { access, readFile } from 'fs/promises';
 import trimStart from 'lodash/trimStart';
 import { constants } from 'fs';
 import { assertIsDefined } from './asserts';
-
-async function resolveNodeBinPath() {
-  const { npm_config_prefix, npm_config_local_prefix } = process.env ?? {};
-  if (npm_config_prefix) {
-    return join(npm_config_prefix, '.bin');
-  }
-
-  if (npm_config_local_prefix) {
-    return join(npm_config_local_prefix, join('node_modules', '.bin'));
-  }
-
-  const prefix = await findPrefix(process.cwd());
-  return join(prefix, 'node_modules', '.bin');
-}
-
-export const getInstallationPath = async (): Promise<string> => {
-  const dir = await resolveNodeBinPath();
-  const normalised = dir.replace(/node_modules.*[\/\\]\.bin/, join('node_modules', '.bin'));
-  await mkdir(normalised, { recursive: true });
-  return normalised;
-};
 
 const validateConfiguration = (config: any): void => {
   assertIsDefined(config.version, 'Invalid package.json: \'version\' property must be specified');
@@ -36,7 +14,6 @@ const validateConfiguration = (config: any): void => {
   }
 
   assertIsDefined(binConfig.name, 'Invalid package.json: \'name\' property is required');
-  assertIsDefined(binConfig.path, 'Invalid package.json: \'path\' property is required');
   assertIsDefined(binConfig.url, 'Invalid package.json: \'url\' property is required');
 };
 
@@ -53,8 +30,7 @@ export const resolveUrl = (url: UrlMapping, platform: Platform, arch: Architectu
   return internalUrl[arch] ?? internalUrl.default;
 };
 
-export async function getPackageInfo(platform: Platform, arch: Architecture, cwd: string): Promise<PackageInfo> {
-  const prefix = await findPrefix(cwd);
+export async function getPackageInfo(platform: Platform, arch: Architecture, prefix: string): Promise<PackageInfo> {
   const packageJsonPath = join(prefix, 'package.json');
 
   if (!await checkFileExists(packageJsonPath)) {

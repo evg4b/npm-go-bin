@@ -1,8 +1,9 @@
 import { assertIn, assertIsDefined } from '../helpres';
 import { ARCH_MAPPING, PLATFORM_MAPPING } from './mappings';
 import { actions } from '../actions';
+import findPrefix from 'find-npm-prefix';
 
-const commandNaneIndex = 2;
+const commandNameIndex = 2;
 
 export const npmGoBin = async (argv: string[], platform: NodeJS.Platform, arch: NodeJS.Architecture, cwd: string) => {
   assertIn(arch, ARCH_MAPPING, `Installation is not supported for this architecture: ${ arch }`);
@@ -12,8 +13,10 @@ export const npmGoBin = async (argv: string[], platform: NodeJS.Platform, arch: 
     throw new Error('No command supplied. `install` and `uninstall` are the only supported commands');
   }
 
-  const action = actions[argv[commandNaneIndex]];
+  const action = actions[argv[commandNameIndex]];
   assertIsDefined(action, 'Invalid command to npm-go-bin. `install` and `uninstall` are the only supported commands');
 
-  await action(PLATFORM_MAPPING[platform], ARCH_MAPPING[arch], cwd);
+  const prefix = await findPrefix(cwd);
+
+  await action(PLATFORM_MAPPING[platform], ARCH_MAPPING[arch], prefix);
 };

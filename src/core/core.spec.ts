@@ -3,7 +3,7 @@ jest.mock('../actions/uninstall');
 
 import { npmGoBin } from './core';
 
-xdescribe('core', () => {
+describe('core', () => {
   describe('for unsupported platform', () => {
     ['aix', 'android', 'haiku', 'openbsd', 'sunos', 'cygwin', 'netbsd']
       .forEach((platform: NodeJS.Platform) => {
