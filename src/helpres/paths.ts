@@ -12,7 +12,7 @@ const resolveNodeBinPath = (prefix: string) => {
   }
 
   return join(prefix, 'node_modules', '.bin');
-}
+};
 
 export const getInstallationPath = async (prefix: string): Promise<string> => {
   const dir = resolveNodeBinPath(prefix);

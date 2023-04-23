@@ -12,10 +12,14 @@
       "node_modules/@types",
       "./src/types.d.ts"
     ],
-    "lib": ["es2020"],
+    "lib": [
+      "es2020"
+    ],
     "sourceMap": true
   },
-  "include": ["src/**/*.ts"],
+  "include": [
+    "src/**/*.ts"
+  ],
   "exclude": [
     "node_modules",
     "src/**/*.spec.ts"

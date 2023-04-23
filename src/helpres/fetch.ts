@@ -6,4 +6,4 @@ export const loadFile = (url: string) => {
       ? Promise.reject(new Error(`Error downloading binary. HTTP Status Code: ${ res.status } - ${ res.statusText }`))
       : Promise.resolve(res.body),
     );
-}
+};

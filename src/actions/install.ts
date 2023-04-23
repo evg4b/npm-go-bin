@@ -1,6 +1,5 @@
-import { getInstallationPath, getPackageInfo, loadFile, unpackArchive } from '../helpres';
+import { getInstallationPath, getPackageInfo, loadFile, unpackArchive, verifyAndPlaceBinary } from '../helpres';
 import { mkdir } from 'fs/promises';
-import { verifyAndPlaceBinary } from './binary';
 
 export const install: Action = async (platform: Platform, arch: Architecture, prefix: string): Promise<void> => {
   const packageInfo = await getPackageInfo(platform, arch, prefix);
@@ -12,5 +11,5 @@ export const install: Action = async (platform: Platform, arch: Architecture, pr
 
   const fileStream = await loadFile(packageInfo.url);
   await unpackArchive(fileStream, packageInfo, installationPath);
-  await verifyAndPlaceBinary(packageInfo.binName, installationPath, prefix);
+  await verifyAndPlaceBinary(packageInfo.binName, installationPath);
 };

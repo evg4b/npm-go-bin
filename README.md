@@ -1,25 +1,33 @@
-## NPM-GO-BIN 
+## NPM-GO-BIN
 
-The lightweight (only 653.4kb instead of 1.5mb) alternative to [go-npm](https://github.com/sanathkr/go-npm) based on their [fork](https://github.com/go-task/go-npm).
+The lightweight (only 653.4kb instead of 1.5mb) alternative to [go-npm](https://github.com/sanathkr/go-npm) based on
+their [fork](https://github.com/go-task/go-npm).
 
 ### Distribute cross-platform Go binaries via NPM
 
-Applications written in Golang are portable - you can easily cross-compile binaries that work on Windows, Mac, and Linux. But how do you distribute the binaries to customers? When you publish new releases, how do they update the binary?
+Applications written in Golang are portable - you can easily cross-compile binaries that work on Windows, Mac, and Linux. But how do you
+distribute the binaries to customers? When you publish new releases, how do they update the binary?
 
 **Use NPM to distribute cross-platform Go binaries**
 
 ## Kidding me! Why NPM?
+
 * **Cross-platform**: NPM is the only popular package manager that works cross-platform.
 * **Lower barrier to entry**: Most developers have NPM installed already.
 * **Pain free publishing**: It just takes one command to publish - `npm publish`
 * **Dead simple install & update story**: `npm install/update -g your-awesome-app`
-* **Adds $PATH**: NPM will automatically add your binary location to $PATH and generate .cmd file for Windows. Your app just works after installation!
+* **Adds $PATH**: NPM will automatically add your binary location to $PATH and generate .cmd file for Windows. Your app just works after
+  installation!
 
 ## Okay, tell me how?
-### 1. Publish your binaries
-Setup your Go application to compile and publish binaries to a file server. This could be Github Releases or Amazon S3 or even Dropbox. All you need is a link.
 
-I like to use [GoReleaser](https://github.com/goreleaser/goreleaser) to setup by release process. You create a simple YAML configuration file like this and run `goreleaser` CLI to publish binaries for various platform/architecture combination to Github:
+### 1. Publish your binaries
+
+Setup your Go application to compile and publish binaries to a file server. This could be Github Releases or Amazon S3 or even Dropbox. All
+you need is a link.
+
+I like to use [GoReleaser](https://github.com/goreleaser/goreleaser) to setup by release process. You create a simple YAML configuration
+file like this and run `goreleaser` CLI to publish binaries for various platform/architecture combination to Github:
 
 ```
 # .goreleaser.yml
@@ -92,7 +100,9 @@ configuration.
 * *url*: HTTP Web server where binaries are hosted.
 
 Following variables are available to customize the URL:
-* `{{version}}`: Version number read from  `package.json` file. When you publish your package to NPM, it will use this version number. Ex: 0.0.1
+
+* `{{version}}`: Version number read from  `package.json` file. When you publish your package to NPM, it will use this version number. Ex:
+  0.0.1
 * `{{platform}}`: `$GOOS` value for the platform
 * `{{arch}}`: `$GOARCH` value for the architecture
 * `{{win_ext}}`: optional `.exe` extension for windows assets.
@@ -113,7 +123,6 @@ npm publish
 To install:
 
 global: `npm install -g your-app-name` or local: `npm install your-app-name --save-dev`
-
 
 To Update:
 
