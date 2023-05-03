@@ -16,7 +16,7 @@ const resolveNodeBinPath = (prefix: string) => {
 
 export const getInstallationPath = async (prefix: string): Promise<string> => {
   const dir = resolveNodeBinPath(prefix);
-  const normalised = dir.replace(/node_modules.*[\/\\]\.bin/, join('node_modules', '.bin'));
+  const normalised = dir.replace(/node_modules.*[/\\]\.bin/, join('node_modules', '.bin'));
   await mkdir(normalised, { recursive: true });
 
   return normalised;

@@ -6,6 +6,7 @@
   "bin": "./bin/cli.js",
   "scripts": {
     "test": "jest",
+    "test:coverage": "jest --collect-coverage",
     "build": "rm -rf ./bin && esbuild --bundle src/cli.ts --outfile=./bin/cli.js --platform=node --minify-whitespace",
     "dev": "rm -rf ./bin && esbuild --watch --bundle src/cli.ts --outfile=./bin/cli.js --sourcemap --platform=node",
     "profile": "rm -rf ./bin && esbuild --bundle src/cli.ts --outfile=./bin/cli.js --sourcemap --platform=node --metafile=meta.json",

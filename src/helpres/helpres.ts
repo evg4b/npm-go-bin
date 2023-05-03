@@ -4,6 +4,7 @@ import trimStart from 'lodash/trimStart';
 import { constants } from 'fs';
 import { assertIsDefined } from './asserts';
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 const validateConfiguration = (config: any): void => {
   assertIsDefined(config.version, 'Invalid package.json: \'version\' property must be specified');
 
@@ -66,6 +67,6 @@ export const getPackageInfo = async (platform: Platform, arch: Architecture, pre
   return { binName, url, version };
 };
 
-const checkFileExists = (file: string): Promise<boolean> => access(file, constants.F_OK)
+export const checkFileExists = (file: string): Promise<boolean> => access(file, constants.F_OK)
   .then(() => true)
   .catch(() => false);

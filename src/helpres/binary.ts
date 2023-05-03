@@ -1,9 +1,9 @@
 import { join } from 'path';
 import { chmod } from 'fs/promises';
-import { existsSync } from 'fs';
+import { checkFileExists } from './helpres';
 
 export const verifyAndPlaceBinary = async (binName: string, installationPath: string) => {
-  if (!existsSync(join(installationPath, binName))) {
+  if (!await checkFileExists(join(installationPath, binName))) {
     throw new Error(`Downloaded binary does not contain the binary specified in configuration - ${ binName }`);
   }
 
