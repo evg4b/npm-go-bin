@@ -7,13 +7,14 @@
     "importHelpers": true,
     "alwaysStrict": true,
     "noImplicitAny": true,
+    "strictNullChecks": true,
     "allowSyntheticDefaultImports": true,
     "typeRoots": [
       "node_modules/@types",
       "./src/types.d.ts"
     ],
     "lib": [
-      "es2020"
+      "esNext"
     ],
     "sourceMap": true
   },

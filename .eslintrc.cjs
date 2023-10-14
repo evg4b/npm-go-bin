@@ -1,16 +1,14 @@
+/* eslint-env node */
 module.exports = {
-  root: true,
-  "ignorePatterns": [
-    "bin/**/*",
-    "node_modules/**/*",
-    "jest.config.js"
-  ],
   extends: [
-    'eslint:recommended',
-    'plugin:@typescript-eslint/recommended'
+    'plugin:@typescript-eslint/strict-type-checked',
+    'plugin:@typescript-eslint/stylistic-type-checked',
   ],
   parser: '@typescript-eslint/parser',
-  plugins: [
-    '@typescript-eslint'
-  ],
+  plugins: ['@typescript-eslint'],
+  root: true,
+  parserOptions: {
+    project: true,
+    tsconfigRootDir: __dirname,
+  },
 };
