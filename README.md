@@ -1,6 +1,6 @@
 ## NPM-GO-BIN
 
-The lightweight (only 653.4kb instead of 1.5mb) alternative to [go-npm](https://github.com/sanathkr/go-npm) based on
+The lightweight (only 548kB instead of 1.5mb) alternative to [go-npm](https://github.com/sanathkr/go-npm) based on
 their [fork](https://github.com/go-task/go-npm).
 
 ### Distribute cross-platform Go binaries via NPM

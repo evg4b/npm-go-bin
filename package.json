@@ -12,7 +12,10 @@
     "profile": "rm -rf ./bin && esbuild --bundle src/cli.ts --outfile=./bin/cli.js --sourcemap --platform=node --metafile=meta.json",
     "lint": "eslint ."
   },
-  "author": "Yauheni Abramovich",
+  "author": {
+    "name": "Yauheni Abramovich",
+    "email": "evg.abramovitch@gmail.com"
+  },
   "packageManager": "yarn@3.5.0",
   "license": "Apache-2.0",
   "repository": {
