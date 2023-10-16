@@ -1,6 +1,6 @@
 import { createGunzip } from 'zlib';
 import { extract as extractTar } from 'tar';
-import { ParseOne as extractZip } from 'unzipper';
+import { ParseOne as extractZip } from 'unzipper-lite';
 import { createWriteStream } from 'fs';
 import { join } from 'path';
 import { Readable } from 'stream';

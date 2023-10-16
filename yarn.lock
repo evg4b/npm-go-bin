@@ -1763,13 +1763,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"bluebird@npm:~3.4.1":
-  version: 3.4.7
-  resolution: "bluebird@npm:3.4.7"
-  checksum: bffa9dee7d3a41ab15c4f3f24687b49959b4e64e55c058a062176feb8ccefc2163414fb4e1a0f3053bf187600936509660c3ebd168fd9f0e48c7eba23b019466
-  languageName: node
-  linkType: hard
-
 "brace-expansion@npm:^1.1.7":
   version: 1.1.11
   resolution: "brace-expansion@npm:1.1.11"
@@ -4753,7 +4746,7 @@ __metadata:
     tar: ^6.1.13
     ts-jest: ^29.1.0
     typescript: ^5.2.2
-    unzipper: ^0.10.11
+    unzipper-lite: ^0.1.0
   bin:
     npm-go-bin: ./bin/cli.js
   languageName: unknown
@@ -5956,13 +5949,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"unzipper@npm:^0.10.11":
-  version: 0.10.11
-  resolution: "unzipper@npm:0.10.11"
+"unzipper-lite@npm:^0.1.0":
+  version: 0.1.0
+  resolution: "unzipper-lite@npm:0.1.0"
   dependencies:
     big-integer: ^1.6.17
     binary: ~0.3.0
-    bluebird: ~3.4.1
     buffer-indexof-polyfill: ~1.0.0
     duplexer2: ~0.1.4
     fstream: ^1.0.12
@@ -5970,7 +5962,7 @@ __metadata:
     listenercount: ~1.0.1
     readable-stream: ~2.3.6
     setimmediate: ~1.0.4
-  checksum: 006cd43ec4d6df47d86aa6b15044a606f50cdcd6a3d6f96f64f54ca0b663c09abb221f76edca0e9592511036d37ea094b1d76ce92c5bf10d7c6eb56f0be678f8
+  checksum: d814badbe08a1cca89a9582ac0c92c4d4b6270eadced483b16d1a6314862adc0dad95ee9c7b7632df978b19116e4b5033a50ca10db28ffb253a7d50b16b604d3
   languageName: node
   linkType: hard
 
