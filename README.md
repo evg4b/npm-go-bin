@@ -1,3 +1,8 @@
+# ⚠️ This package has been deprecated ⚠️
+
+This package has been deprecated and will no longer receive updates or support.
+It is strongly advised against continued use. Please consider transitioning to the [binary-distributor](https://github.com/evg4b/binary-distributor) package or explore other available options.
+
 ## NPM-GO-BIN
 
 The lightweight (only 548kB instead of 1.5mb) alternative to [go-npm](https://github.com/sanathkr/go-npm) based on
